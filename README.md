@@ -7,6 +7,8 @@
 - [Containerized](#containerized)
   - [Docker](#docker)
   - [Kubernetes](#kubernetes)
+- [Infrastructure as Code (IaC)](#infrastructure-as-code-iac)
+  - [Terraform](#terraform)
  
 # Containerized
 > ...
@@ -15,4 +17,10 @@
 > ...
 
 ## Kubernetes
+> ...
+
+# Infrastructure as Code (IaC)
+> ...
+
+## Terraform
 > ...
