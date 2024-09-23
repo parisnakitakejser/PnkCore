@@ -11,6 +11,7 @@
   - [Terraform](#terraform)
 - [Automation & Orchestration](#automation--orchestration)
   - [Apache AirFlow](#apache-airflow)
+  - [Apache Kafka](#apache-kafka)
  
 # Containerized
 > ...
@@ -31,4 +32,7 @@
 > ...
 
 ## Apache AirFlow
+> ...
+
+## Apache Kafka
 > ...
