@@ -9,30 +9,47 @@
   - [Kubernetes](#kubernetes)
 - [Infrastructure as Code (IaC)](#infrastructure-as-code-iac)
   - [Terraform](#terraform)
-- [Automation & Orchestration](#automation--orchestration)
+- [DevOps & CI/CD Pipelines](#devops--cicd-pipelines)
+- [Data Engineering & Pipelines](#data-engineering--pipelines)
   - [Apache AirFlow](#apache-airflow)
   - [Apache Kafka](#apache-kafka)
- 
+
 # Containerized
+
 > ...
 
 ## Docker
+
 > ...
 
 ## Kubernetes
+
 > ...
 
 # Infrastructure as Code (IaC)
+
 > ...
 
 ## Terraform
+
 > ...
 
-# Automation & Orchestration
+# DevOps & CI/CD Pipelines
+
+> ...
+
+# Data Engineering & Pipelines
+
 > ...
 
 ## Apache AirFlow
+
 > ...
 
 ## Apache Kafka
+
 > ...
+
+**Courses**
+
+- [Apache Kafka for Beginners](https://datacraftbackbone.com/courses/data-engineering-pipelines/apache-kafka/apache-kafka-for-beginners/)
