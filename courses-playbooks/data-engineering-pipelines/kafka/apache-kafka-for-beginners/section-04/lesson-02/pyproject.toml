@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "lesson-02"
+version = "0.1.0"
+description = ""
+authors = ["Paris Nakita Kejser <contact@datacraftbackbone.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic-settings = "^2.5.2"
+six = "^1.16.0"
+kafka-python-ng = "^2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

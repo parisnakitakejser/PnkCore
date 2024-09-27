@@ -1,0 +1,72 @@
+[
+    {
+        "guid": "d0d637e7-9357-475b-9625-5b9075b82f2b",
+        "name": "Burns Rosa",
+        "address": "94 Ralph Avenue, Hemlock, Vermont",
+        "company": "Myopium",
+        "isActive": true
+    },
+    {
+        "guid": "49198f5f-a414-4109-bc65-fc22a4feb676",
+        "name": "Maritza Madden",
+        "address": "9 Trucklemans Lane, Loretto, Maine",
+        "company": "Bugsall",
+        "isActive": true
+    },
+    {
+        "guid": "c62f9aec-ecf9-452e-b084-ce66c22d0d36",
+        "name": "Pickett Paul",
+        "address": "30 Joralemon Street, Websterville, Mississippi",
+        "company": "Quailcom",
+        "isActive": true
+    },
+    {
+        "guid": "e1fe64bf-6dd7-4004-955f-e57802772916",
+        "name": "Lang Evans",
+        "address": "46 Wythe Place, Bartonsville, Tennessee",
+        "company": "Exoswitch",
+        "isActive": false
+    },
+    {
+        "guid": "14c1834d-6559-47c9-a3a3-0831d0fd1157",
+        "name": "Bridges Dodson",
+        "address": "2 Lake Street, Yorklyn, Wyoming",
+        "company": "Eyewax",
+        "isActive": false
+    },
+    {
+        "guid": "007f8fc3-9559-4005-8c34-7f85c848c898",
+        "name": "Douglas Banks",
+        "address": "41 Nostrand Avenue, Idledale, Maryland",
+        "company": "Avit",
+        "isActive": false
+    },
+    {
+        "guid": "fcfe9b5e-af57-4a65-b3d2-d71cdf1ee5e8",
+        "name": "Leblanc Delaney",
+        "address": "91 Calder Place, Jenkinsville, South Dakota",
+        "company": "Ronbert",
+        "isActive": true
+    },
+    {
+        "guid": "1e485fd9-988a-4d86-950a-641b99ac23a6",
+        "name": "Walsh Hickman",
+        "address": "60 Monitor Street, Kidder, New Mexico",
+        "company": "Microluxe",
+        "isActive": false
+    },
+    {
+        "guid": "fbc43f7b-1dff-4733-904c-3340118d8e45",
+        "name": "Billie Wilkins",
+        "address": "7 Colonial Road, Hannasville, New Hampshire",
+        "company": "Magmina",
+        "isActive": true
+    },
+    {
+        "guid": "515843c3-a0ac-4c5d-bffd-c38104654bc8",
+        "name": "Neal Browning",
+        "address": "36 Morgan Avenue, Grimsley, Nevada",
+        "company": "Xyqag",
+        "isActive": true
+    }
+]
