@@ -19,7 +19,7 @@ WORKDIR /app/service
 RUN --mount=type=cache,target=$POETRY_CACHE_DIR poetry install --without dev --no-root
 
 # Cleanup the images for production
-FROM gcr.io/distroless/python3-debian12 AS runtime
+FROM gcr.io/distroless/python3-debian12:nonroot AS runtime
 
 ENV VIRTUAL_ENV=/app/service/.venv \
     PATH="/app/service/.venv/bin:$PATH"
