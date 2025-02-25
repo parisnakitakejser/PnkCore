@@ -1,0 +1,6 @@
+myhosts:
+  hosts:
+    k8s_host:
+      ansible_host: k8s-single-node
+      ansible_user: k8s
+      ansible_password: changeme

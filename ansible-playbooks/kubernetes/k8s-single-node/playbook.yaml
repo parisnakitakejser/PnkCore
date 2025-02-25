@@ -1,0 +1,80 @@
+- name: Kubernetes Single Node Setup
+  hosts: myhosts
+  tasks:
+   - name: Disable Swap Permanently
+     ansible.builtin.shell:
+       cmd: |
+        sudo swapoff -a
+        sudo sed -e '/swap/ s/^#*/#/' -i /etc/fstab
+        sudo systemctl mask swap.target
+
+   - name: Update and dist-upgrade system before contiune
+     ansible.builtin.shell:
+       cmd: |
+        sudo apt-get update
+        sudo apt dist-upgrade -y
+
+   - name: Install containerd
+     ansible.builtin.shell:
+       cmd: |
+        sudo apt install containerd -y
+        sudo mkdir -p /etc/containerd
+        containerd config default | sudo tee /etc/containerd/config.toml
+        sudo sed -i 's/SystemdCgroup = false/SystemdCgroup = true/' /etc/containerd/config.toml
+        sudo systemctl restart containerd
+        sudo systemctl enable containerd
+
+   - name: Install needed packages
+     ansible.builtin.shell:
+       cmd: sudo apt-get install -y apt-transport-https ca-certificates curl gpg
+   
+   - name: Add kubernetes to packages manager
+     ansible.builtin.shell:
+       cmd: |
+        curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.32/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg --yes
+        echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.32/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+        sudo apt-get update
+
+   - name: Install kubelet, kubeadm and kubectl
+     ansible.builtin.shell:
+       cmd: |
+        sudo apt-get install -y kubelet kubeadm kubectl docker.io
+        sudo apt-mark hold kubelet kubeadm kubectl
+        sudo systemctl enable --now kubelet
+
+   - name: Init kubernetes cluster
+     ansible.builtin.shell:
+       cmd: |
+        sudo kubeadm init --v=5
+
+   - name: Init kubernetes cluster
+     ansible.builtin.shell:
+       cmd: |
+        mkdir -p $HOME/.kube
+        sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+        sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+   - name: Install Helm v3
+     ansible.builtin.shell:
+       cmd: |
+        curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
+        sudo apt-get install apt-transport-https --yes
+        echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+        sudo apt-get update
+        sudo apt-get install helm -y
+
+   - name: Install Cilium
+     ansible.builtin.shell:
+       cmd: |
+        helm repo add cilium https://helm.cilium.io/
+        helm install cilium cilium/cilium \
+          --version 1.17.1 \
+          --namespace kube-system \
+          --create-namespace \
+          --set operator.replicas=1 \
+          --set kubeProxyReplacement=true \
+          --set encryption.enabled=true \
+          --set encryption.nodeEncryption=true \
+          --set encryption.type=wireguard \
+          --set ingressController.enabled=true \
+          --set ingressController.loadbalancerMode=dedicated
