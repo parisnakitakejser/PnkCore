@@ -1,0 +1,4 @@
+kubeadm_token: ""
+kubeadm_hash: ""
+controlplan_host: ""
+controlplan_port: "6443"
