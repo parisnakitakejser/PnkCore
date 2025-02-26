@@ -1,0 +1,6 @@
+- name: Disable Swap Permanently
+  ansible.builtin.shell:
+    cmd: |
+      sudo swapoff -a
+      sudo sed -e '/swap/ s/^#*/#/' -i /etc/fstab
+      sudo systemctl mask swap.target

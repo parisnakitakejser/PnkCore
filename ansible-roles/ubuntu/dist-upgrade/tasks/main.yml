@@ -1,0 +1,5 @@
+- name: Update and dist-upgrade system before contiune
+  ansible.builtin.shell:
+    cmd: |
+      sudo apt-get update
+      sudo apt dist-upgrade -y

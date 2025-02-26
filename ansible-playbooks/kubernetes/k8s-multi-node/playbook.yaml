@@ -1,0 +1,59 @@
+- name: Prepare for Kubernetes setup
+  hosts: controlplane,workernodes
+  tasks:
+    - name: Print a message
+      ansible.builtin.debug:
+        msg: "Prepare the kubernetes server instances" 
+
+    - name: Run disable-swap-permanently role
+      include_role:
+        name: ../../../ansible-roles/ubuntu/disable-swap-permanently
+
+    - name: Run dist-upgrade role
+      include_role:
+        name: ../../../ansible-roles/ubuntu/dist-upgrade
+        
+    - name: Run dist-upgrade role
+      include_role:
+        name: ../../../ansible-roles/kubernetes/install-containerd
+
+    - name: Run dist-upgrade role
+      include_role:
+        name: ../../../ansible-roles/kubernetes/prepare-kubernetes
+
+- name: Setup controlplane
+  hosts: controlplane[0]
+  tasks:
+    - name: Print a message
+      ansible.builtin.debug:
+        msg: "Init kubernetes controlplane node" 
+
+    - name: Run setup-controlplane role
+      include_role:
+        name: ../../../ansible-roles/kubernetes/setup-controlplane
+
+    - name: Run install-helm role
+      include_role:
+        name: ../../../ansible-roles/ubuntu/install-helm
+
+    - name: Run install-cilium-with-helm role
+      run_once: true
+      include_role:
+        name: ../../../ansible-roles/kubernetes/install-cilium-with-helm
+
+- name: Setup worker node
+  hosts: workernodes
+  vars_files:
+    - inventories/development/group_vars.yml
+  tasks:
+    - name: Print a message
+      ansible.builtin.debug:
+        msg: "setup kubernetes worker node" 
+
+    - name: Run setup-workernode role
+      vars:
+        kubeadm_token: "{{ hostvars[groups['controlplane'][0]]['kubeadm_token'] }}"
+        kubeadm_hash: "{{ hostvars[groups['controlplane'][0]]['kubeadm_hash'] }}"
+        controlplan_host: "{{ k8s_controlplane_ip }}"
+      include_role:
+        name: ../../../ansible-roles/kubernetes/setup-workernode

@@ -1,0 +1,31 @@
+  - name: Init kubernetes cluster
+    ansible.builtin.shell:
+      cmd: |
+        sudo kubeadm init --v=5
+
+  - name: Init kubernetes cluster
+    ansible.builtin.shell:
+      cmd: |
+        mkdir -p $HOME/.kube
+        sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+        sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+  - name: Create token from command
+    command: "sudo kubeadm token create"
+    register: kubeadm_token
+
+  - name: Get token args
+    ansible.builtin.set_fact:
+      kubeadm_token: "{{ kubeadm_token.stdout | trim  }}"
+    
+  - name: Create hash from command
+    ansible.builtin.shell: 
+      cmd: |
+        sudo cat /etc/kubernetes/pki/ca.crt | openssl x509 -pubkey  | openssl rsa -pubin -outform der 2>/dev/null | \
+          openssl dgst -sha256 -hex | sed 's/^.* //'
+
+    register: kubeadm_hash
+
+  - name: Get hash args
+    ansible.builtin.set_fact:
+      kubeadm_hash: "{{ kubeadm_hash.stdout | trim  }}"

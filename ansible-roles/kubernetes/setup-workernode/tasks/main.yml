@@ -1,0 +1,4 @@
+  - name: Join workernode to kubernetes cluster
+    ansible.builtin.shell:
+      cmd: |
+        sudo kubeadm join --token {{ kubeadm_token }} {{ controlplan_host }}:{{ controlplan_port }} --discovery-token-ca-cert-hash sha256:{{ kubeadm_hash }}

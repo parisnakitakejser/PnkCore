@@ -1,0 +1,19 @@
+all:
+  hosts:
+    k8s_cp_host_1:
+      ansible_host: k8s-multi-node-cp
+      ansible_user: k8s
+      ansible_password: changeme
+
+    k8s_wn_host_1:
+      ansible_host: k8s-multi-node-worker
+      ansible_user: k8s
+      ansible_password: changeme
+
+controlplane:
+  hosts:
+    k8s_cp_host_1:
+    
+workernodes:
+  hosts:
+    k8s_wn_host_1:

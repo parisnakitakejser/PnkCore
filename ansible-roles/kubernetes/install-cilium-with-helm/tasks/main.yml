@@ -1,0 +1,15 @@
+- name: Install Cilium
+  ansible.builtin.shell:
+    cmd: |
+      helm repo add cilium https://helm.cilium.io/
+      helm install cilium cilium/cilium \
+        --version 1.17.1 \
+        --namespace kube-system \
+        --create-namespace \
+        --set operator.replicas=1 \
+        --set kubeProxyReplacement=true \
+        --set encryption.enabled=true \
+        --set encryption.nodeEncryption=true \
+        --set encryption.type=wireguard \
+        --set ingressController.enabled=true \
+        --set ingressController.loadbalancerMode=dedicated
