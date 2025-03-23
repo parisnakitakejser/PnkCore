@@ -22,3 +22,7 @@
     cmd: |
       mosquitto_passwd -U /etc/mosquitto/passwd
 
+- name: Restart mosquitto
+  ansible.builtin.shell:
+    cmd: |
+      systemctl restart mosquitto
