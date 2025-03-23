@@ -1,0 +1,5 @@
+mosquitto_users:
+  - username: mqtt-pub
+    password: secret
+  - username: mqtt-sub
+    password: secret
