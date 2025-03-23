@@ -1,0 +1,17 @@
+- name: Prepare for mosquitto setup
+  hosts: mosquitto
+  tasks:
+    - name: Print a message
+      ansible.builtin.debug:
+        msg: "Install mosquitto MQTT Server"
+
+- name: Setup mosquitto - MQTT Server
+  hosts: mosquitto
+  tasks:
+    - name: Install mosquitto
+      include_role:
+        name: ../../../../ansible-roles/mosquitto/install-mosquitto
+
+    - name: Run setup-controlplane role
+      include_role:
+        name: ../../../../ansible-roles/mosquitto/init-mosquitto

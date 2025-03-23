@@ -1,0 +1,6 @@
+- name: Install mosquitto
+  ansible.builtin.shell:
+    cmd: |
+      sudo apt update
+      sudo apt install -y mosquitto
+      sudo systemctl status mosquitto

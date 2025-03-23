@@ -1,0 +1,9 @@
+all:
+  hosts:
+    mosquitto_host:
+      ansible_host: {replace-with-your-ip-addrese}
+      ansible_user: root
+
+mosquitto:
+  hosts:
+    mosquitto_host:
