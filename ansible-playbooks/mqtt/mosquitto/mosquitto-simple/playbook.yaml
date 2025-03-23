@@ -5,13 +5,9 @@
       ansible.builtin.debug:
         msg: "Install mosquitto MQTT Server"
 
-- name: Setup controlplane
+- name: Setup mosquitto - MQTT Server
   hosts: mosquitto
   tasks:
-    - name: Print a message
-      ansible.builtin.debug:
-        msg: "Init kubernetes controlplane node: {{ mosquitto_users  }}" 
-
     - name: Install mosquitto
       include_role:
         name: ../../../../ansible-roles/mosquitto/install-mosquitto
