@@ -8,6 +8,10 @@ Tested on Ubuntu Server 24.04 LTS on UpCloud as cloud provider.
 make install
 ```
 
+## Related content
+- Blog post: [Using an external MQTT server as a bridge between Zigbee coordinator and Home Assistant running inside Kubernetes](https://pnk.sh/using-an-external-mqtt-server-as-a-bridge-between-zigbee-coordinator-and-home-assistant-running-390d63c1c0ad)
+
+
 ## Be social with me! :)
 - X: https://x.com/parisnkejser
 - LinkedIn: https://www.linkedin.com/in/parisnakitakejser/
