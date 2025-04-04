@@ -10,17 +10,17 @@ spec:
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: flux-wordpress
+  name: flux-valkey
   namespace: flux-system
 spec:
   interval: 1h
   timeout: 5m
-  releaseName: flux-wordpress
+  releaseName: flux-valkey
   targetNamespace: flux-helm-test
   chart:
     spec:
-      chart: wordpress
-      version: '24.1.18'
+      chart: valkey
+      version: '2.4.7'
       sourceRef:
         kind: HelmRepository
         name: bitnami
