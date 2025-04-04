@@ -28,7 +28,7 @@ spec:
       chart: argo-cd
       sourceRef:
         kind: HelmRepository
-        name: argo-cd
+        name: argocd
       interval: 1m
 
   # values:
