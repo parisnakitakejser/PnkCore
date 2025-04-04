@@ -1,0 +1,45 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: argocd
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: argocd
+  namespace: argocd
+spec:
+  interval: 12h
+  url: https://argoproj.github.io/argo-helm
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: argocd
+  namespace: argocd
+spec:
+  interval: 1h
+  timeout: 5m
+  releaseName: argo-cd
+  targetNamespace: argocd
+  chart:
+    spec:
+      chart: argo-cd
+      sourceRef:
+        kind: HelmRepository
+        name: argocd
+      interval: 1m
+
+  # values:
+  #   global: 
+  #     domain: argocd.example.com
+
+  install:
+    createNamespace: true
+    remediation:
+      retries: 3
+
+  upgrade:
+    remediation:
+      retries: 3
