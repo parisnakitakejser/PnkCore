@@ -25,6 +25,7 @@ spec:
       interval: 1m
 
   install:
+    createNamespace: true
     remediation:
       retries: 3
 
