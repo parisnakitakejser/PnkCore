@@ -13,4 +13,4 @@ Whether you’re building your first containerized app or designing advanced on-
 ## Infrastructure
 | Name | Resource Type | Level | Description | Status | Tags | Link |
 |---------------|----------------|--------|--------------|--------|------|------|
-| Setup your own local test environment  | Video Tutorial | Beginner | Guides you to setup Kubernetes as a playground. | ✅ Published | Kubernetes, Containers | [YouTube](https://youtu.be/-uqXhRC5uMs), [Medium](https://pnk.sh/create-a-home-lab-running-kubernetes-multi-node-cluster-with-cilium-as-cni-98d8fafd74ee), [Resources](kubernetes/infrastructure/setup-your-own-local-test-environment/README.md) |
+| Setup your own local test environment  | Video Tutorial | Beginner | Guides you to setup Kubernetes as a playground. | ✅ Published | Kubernetes, kubeadm, cri-o, Cilium | [YouTube](https://youtu.be/-uqXhRC5uMs), [Medium](https://pnk.sh/create-a-home-lab-running-kubernetes-multi-node-cluster-with-cilium-as-cni-98d8fafd74ee), [Resources](kubernetes/infrastructure/setup-your-own-local-test-environment/README.md) |
