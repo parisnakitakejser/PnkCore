@@ -1,3 +1,9 @@
-# DataCraftCore
+# PnkCore
 
-> Welcome to DataCraftCore, a repository that showcases a curated collection of sample code and tutorials designed for modern infrastructure and data engineering. Explore real-world examples covering Docker, Kubernetes, Infrastructure as Code, Python, and other containerized technologies. Built for developers, DevOps Engineers, and data professionals, this repo aligns with content from my YouTube channel DataCraft Backbone, providing hands-on resources to master cloud infrastructure, automation, and data engineering practices. Whether you’re just starting out or advancing your skills, DataCraftCore is your go-to resource for mastering the backbone of modern data and infrastructure architecture.
+Welcome to PnkCore, a curated collection of sample code, templates, and tutorials built around modern infrastructure and data engineering practices.
+
+Here you’ll find real-world examples spanning Docker, Kubernetes, Infrastructure as Code, Python, and other containerized technologies.
+
+Created for developers, DevOps engineers, and data professionals, this repository connects directly with the educational content from my [YouTube channel](https://www.youtube.com/@parisnakitakejser), hands-on resources to help you master cloud infrastructure, automation, and data pipelines.
+
+Whether you’re building your first containerized app or designing advanced on-prem and hybrid architectures, PnkCore is your go-to foundation for understanding and implementing the backbone of modern infrastructure.
