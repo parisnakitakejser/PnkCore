@@ -14,3 +14,8 @@ Whether you’re building your first containerized app or designing advanced on-
 | Name | Resource Type | Level | Description | Status | Tags | Link |
 |---------------|----------------|--------|--------------|--------|------|------|
 | Setup your own local test environment  | Video Tutorial | Beginner | Guides you to setup Kubernetes as a playground. | ✅ Published | Kubernetes, kubeadm, cri-o, Cilium | [YouTube](https://youtu.be/-uqXhRC5uMs), [Medium](https://pnk.sh/create-a-home-lab-running-kubernetes-multi-node-cluster-with-cilium-as-cni-98d8fafd74ee), [Resources](kubernetes/infrastructure/setup-your-own-local-test-environment/README.md) |
+
+## Istio
+| Name | Resource Type | Level | Description | Status | Tags | Link |
+|---------------|----------------|--------|--------------|--------|------|------|
+| Install Istio with istioctl on Kubernetes (Kind Setup + Namespace Injection Demo)  | Video Tutorial | Beginner | Guides you to setup Istio with Istioctl into a Kind Kubernetes playground. | ✅ Published | Kubernetes, Kind, Istio, istioctl | [YouTube](https://youtu.be/wfAxK8b4KAo), [Resources](kubernetes/istio/install-istio-with-istioctl-on-kubernetes/README.md) |
