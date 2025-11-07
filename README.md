@@ -19,3 +19,11 @@ Whether you’re building your first containerized app or designing advanced on-
 | Name | Resource Type | Level | Description | Status | Tags | Link |
 |---------------|----------------|--------|--------------|--------|------|------|
 | Install Istio with istioctl on Kubernetes (Kind Setup + Namespace Injection Demo)  | Video Tutorial | Beginner | Guides you to setup Istio with Istioctl into a Kind Kubernetes playground. | ✅ Published | Kubernetes, Kind, Istio, istioctl | [YouTube](https://youtu.be/wfAxK8b4KAo), [Resources](kubernetes/istio/install-istio-with-istioctl-on-kubernetes/README.md) |
+
+
+# Ceph
+
+## Observability
+| Name | Resource Type | Level | Description | Status | Tags | Link |
+|---------------|----------------|--------|--------------|--------|------|------|
+| Collecting SMART Disk Metrics from Ceph with OpenTelemetry  | Video Tutorial | Beginner | Guides you to setup Istio with Istioctl into a Kind Kubernetes playground. | ✅ Published | Ceph, OpenTelemetry, SMART Disk | [YouTube](https://youtu.be/9vn8SEEfmAg), [Resources](ceph/observability/collecting-smart-disk-metrics-from-ceph-with-opentelemetry/README.md) |

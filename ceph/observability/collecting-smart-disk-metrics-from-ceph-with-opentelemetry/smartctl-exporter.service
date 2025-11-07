@@ -1,0 +1,11 @@
+[Unit]
+Description=Prometheus SMART Metrics Exporter
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/smartctl_exporter
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
