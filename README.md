@@ -18,7 +18,7 @@ Whether you’re building your first containerized app or designing advanced on-
 ## Istio
 | Name | Description | Link |
 |---------------|--------------|------|
-| Install Istio with istioctl on Kubernetes (Kind Setup + Namespace Injection Demo) | Guides you to setup Istio with Istioctl into a Kind Kubernetes playground. | Kubernetes, Kind, Istio, istioctl | [YouTube](https://youtu.be/wfAxK8b4KAo), [Resources](kubernetes/istio/install-istio-with-istioctl-on-kubernetes/README.md) |
+| Install Istio with istioctl on Kubernetes (Kind Setup + Namespace Injection Demo) | Guides you to setup Istio with Istioctl into a Kind Kubernetes playground. | [YouTube](https://youtu.be/wfAxK8b4KAo), [Resources](kubernetes/istio/install-istio-with-istioctl-on-kubernetes/README.md) |
 
 
 # Ceph
