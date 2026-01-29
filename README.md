@@ -8,6 +8,14 @@ Created for developers, DevOps engineers, and data professionals, this repositor
 
 Whether you’re building your first containerized app or designing advanced on-prem and hybrid architectures, PnkCore is your go-to foundation for understanding and implementing the backbone of modern infrastructure.
 
+# Cloud Native Certifications
+
+## CKS
+| Name | Description | Link |
+|---------------|----------------|------|
+| CKS Exam Prep: Environment Setup  | A hands-on guide to setting up a Kubernetes environment tailored for the CKS exam, focusing on security tooling, realistic scenarios, and exam-relevant configurations. | [Resources](cncf-certifications/cks/cluster-setup/README.md) |
+
+
 # Kubernetes
 
 ## Infrastructure
