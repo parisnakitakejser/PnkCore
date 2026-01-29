@@ -42,13 +42,13 @@ sudo -i
 2) On the control plane VM (`cks-main`), run:
 
 ```bash
-bash ./install-main.sh
+curl -fsSL https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/cluster-setup/install-main.sh | bash
 ```
 
 3) On each worker VM (`cks-worker1`, `cks-worker2`), run:
 
 ```bash
-bash ./install-worker.sh
+curl -fsSL https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/cluster-setup/install-worker.sh | bash
 ```
 
 ## Notes and tips
