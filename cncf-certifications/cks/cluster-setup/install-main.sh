@@ -175,7 +175,7 @@ corefile = subprocess.check_output(
 )
 
 old_line = "forward . /etc/resolv.conf"
-new_block = "forward . 8.8.8.8 8.8.4.4 {\n    max_concurrent 1000\n}"
+new_block = "forward . 8.8.8.8 8.8.4.4"
 
 if old_line in corefile:
     corefile = corefile.replace(old_line, new_block, 1)
