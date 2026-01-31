@@ -1,0 +1,11 @@
+- rule: Detect /tmp/mem Access
+  desc: Detect processes that attempt to read /tmp/mem
+  condition: >
+    (evt.type = open or evt.type = openat)
+    and fd.name = /tmp/mem
+  output: >
+    Process %proc.name accessed /tmp/mem
+    (cmd=%proc.cmdline user=%user.name
+    container=%container.id image=%container.image.repository)
+  priority: WARNING
+  tags: [security]
