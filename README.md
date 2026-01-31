@@ -13,7 +13,7 @@ Whether you’re building your first containerized app or designing advanced on-
 ## CKS
 | Name | Description | Link |
 |---------------|----------------|------|
-| CKS Exam Prep: Environment Setup  | A hands-on guide to setting up a Kubernetes environment tailored for the CKS exam, focusing on security tooling, realistic scenarios, and exam-relevant configurations. | [Resources](cncf-certifications/cks/cluster-setup/README.md) |
+| CKS Exam Prep: Environment Setup  | A hands-on guide to setting up a Kubernetes environment tailored for the CKS exam, focusing on security tooling, realistic scenarios, and exam-relevant configurations. | [Resources](cncf-certifications/cks/cluster-setup/README.md), [YouTube](https://youtu.be/hH4CsB1VehQ) |
 
 
 # Kubernetes
@@ -27,6 +27,11 @@ Whether you’re building your first containerized app or designing advanced on-
 | Name | Description | Link |
 |---------------|--------------|------|
 | Install Istio with istioctl on Kubernetes (Kind Setup + Namespace Injection Demo) | Guides you to setup Istio with Istioctl into a Kind Kubernetes playground. | [YouTube](https://youtu.be/wfAxK8b4KAo), [Resources](kubernetes/istio/install-istio-with-istioctl-on-kubernetes/README.md) |
+
+## Perses
+| Name | Description | Link |
+|---------------|--------------|------|
+| Deploy Perses the GitOps Way with Helm & FluxCD - Full Setup Guide | ... | [Medium](https://medium.com/@parisnakitakejser/deploy-perses-the-gitops-way-with-helm-fluxcd-full-setup-guide-6c2bad855dbe), [Resources](kubernetes/perses/deploy-perses-the-gitops-way-with-helm-and-fluxcd-full-setup-guide/README.md) |
 
 
 # Ceph
