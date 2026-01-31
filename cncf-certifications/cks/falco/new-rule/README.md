@@ -19,7 +19,7 @@ kubectl apply -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/ref
 This file name must match the `subPath` and the key in the ConfigMap.
 
 ```bash
-curl https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/falco/new-rule/custom-falco-rule.yaml
+wget https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/falco/new-rule/custom-falco-rule.yaml
 kubectl -n falco create configmap falco-custom-rules \
   --from-file=custom-falco-rule.yaml
 ```
