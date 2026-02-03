@@ -3,6 +3,11 @@
 This lab shows how to add a custom Falco rule via a ConfigMap and mount it into
 the Falco DaemonSet.
 
+Falco supported fields reference:
+
+- Path: Docs → Reference → Falco Rules → Fields for Conditions and Outputs
+- Direct page: https://falco.org/docs/reference/rules/supported-fields/
+
 ## Prerequisites
 
 - Falco is installed in the `falco` namespace
