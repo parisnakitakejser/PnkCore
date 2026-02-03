@@ -7,6 +7,7 @@ Falco supported fields reference:
 
 - Path: Docs → Reference → Falco Rules → Fields for Conditions and Outputs
 - Direct page: https://falco.org/docs/reference/rules/supported-fields/
+- Basic rule elements: https://falco.org/docs/concepts/rules/basic-elements/
 
 ## Prerequisites
 
