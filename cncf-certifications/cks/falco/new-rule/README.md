@@ -1,4 +1,4 @@
-# CKS Exam Preparation: Falco Custom Rule (New Rule)
+# CKS Exam Preparation: Falco Writing & Applying a New Rule (Hands-On)
 
 This lab shows how to add a custom Falco rule via a ConfigMap and mount it into
 the Falco DaemonSet.
