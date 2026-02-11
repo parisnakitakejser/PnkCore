@@ -11,11 +11,11 @@ Whether you’re building your first containerized app or designing advanced on-
 # Cloud Native Certifications
 
 ## CKS
-| Name | Description | Link |
-|---------------|----------------|------|
-| CKS Exam Prep: Environment Setup  | A hands-on guide to setting up a Kubernetes environment tailored for the CKS exam, focusing on security tooling, realistic scenarios, and exam-relevant configurations. | [Resources](cncf-certifications/cks/cluster-setup/README.md), [YouTube](https://youtu.be/hH4CsB1VehQ) |
-| CKS Exam Prep: Falco: Writing & Applying a New Rule (Hands-On)  | ... | [Resources](cncf-certifications/cks/falco/new-rule/README.md), [YouTube](https://youtu.be/o-XMBPQ591U) |
-| CKS Exam Prep: Audit logging  | ... | [Resources](cncf-certifications/cks/audit-logging/README.md), [YouTube](https://youtu.be/T0fj-z8zzuA) |
+| Name |  Link |
+|---------------|------|
+| CKS Exam Prep: Environment Setup  | [Resources](cncf-certifications/cks/cluster-setup/README.md), [YouTube](https://youtu.be/hH4CsB1VehQ) |
+| CKS Exam Prep: Falco: Writing & Applying a New Rule (Hands-On)  | [Resources](cncf-certifications/cks/falco/new-rule/README.md), [YouTube](https://youtu.be/o-XMBPQ591U) |
+| CKS Exam Prep: Audit logging  | [Resources](cncf-certifications/cks/audit-logging/README.md), [YouTube](https://youtu.be/T0fj-z8zzuA) |
 
 
 # Kubernetes
