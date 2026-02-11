@@ -14,7 +14,7 @@ Whether you’re building your first containerized app or designing advanced on-
 | Name |  Link |
 |---------------|------|
 | CKS Exam Prep: Environment Setup  | [Resources](cncf-certifications/cks/cluster-setup/README.md), [YouTube](https://youtu.be/hH4CsB1VehQ) |
-| CKS Exam Prep: Falco: Writing & Applying a New Rule (Hands-On)  | [Resources](cncf-certifications/cks/falco/new-rule/README.md), [YouTube](https://youtu.be/o-XMBPQ591U) |
+| CKS Exam Prep: Falco: Writing & Applying a New Rule  | [Resources](cncf-certifications/cks/falco/new-rule/README.md), [YouTube](https://youtu.be/o-XMBPQ591U) |
 | CKS Exam Prep: Audit logging  | [Resources](cncf-certifications/cks/audit-logging/README.md), [YouTube](https://youtu.be/T0fj-z8zzuA) |
 
 
