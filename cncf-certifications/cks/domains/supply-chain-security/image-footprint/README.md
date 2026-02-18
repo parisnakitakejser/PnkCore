@@ -20,7 +20,13 @@ CMD ["sh"]
 
 From the `app` directory:
 
+
 ```sh
+mkdir app
+cd app
+curl -O https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/domains/supply-chain-security/image-footprint/app/Dockerfile
+curl -O https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/domains/supply-chain-security/image-footprint/app/app.go
+
 docker build -t app .
 docker run --rm app:latest
 docker image list | grep app
