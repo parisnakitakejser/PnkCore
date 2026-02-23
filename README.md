@@ -14,6 +14,7 @@ Whether you’re building your first containerized app or designing advanced on-
 | Name |  Link |
 |---------------|------|
 | CKS Exam Prep: Environment Setup  | [Resources](cncf-certifications/cks/cluster-setup/README.md), [YouTube](https://youtu.be/hH4CsB1VehQ) |
+| CKS Exam Prep: Microservice Vulnerabilities - Manage Kubernetes Secrets  | [Resources](cncf-certifications/cks/domains/minimize-microservice-vulnerabilities/manage-kubernetes-secrets/README.md), [YouTube](https://youtu.be/HHYj4C4ZJtI) |
 | CKS Exam Prep: Supply Chain Security - Image Footprint  | [Resources](cncf-certifications/cks/domains/supply-chain-security/image-footprint/README.md), [YouTube](https://youtu.be/DiFQE5j4tZ4) |
 | CKS Exam Prep: Supply Chain Security - Image Vulnerability Scanning With Trivy  | [Resources](cncf-certifications/cks/domains/supply-chain-security/image-vulnerability-scanning-with-trivy/README.md), [YouTube](https://youtu.be/P0RAnP93a-U) |
 | CKS Exam Prep: Runtime Security - Falco: Writing & Applying a New Rule  | [Resources](cncf-certifications/cks/falco/new-rule/README.md), [YouTube](https://youtu.be/o-XMBPQ591U) |
