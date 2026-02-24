@@ -1,4 +1,4 @@
-# CKS Exam Preparation: Falco Writing & Applying a New Rule (Hands-On)
+# CKS Exam Prep: Runtime Security - Falco Writing & Applying a New Rule (Hands-On)
 
 This lab shows how to add a custom Falco rule via a ConfigMap and mount it into
 the Falco DaemonSet.
@@ -17,7 +17,7 @@ Falco supported fields reference:
 ## Step 1: Create the demo workload
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/falco/new-rule/deployment.yaml
+kubectl apply -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/domains/runtime-security/falco-writing-applying-a-new-rule/deployment.yaml
 ```
 
 ## Step 2: Create the ConfigMap for the rule
@@ -25,7 +25,7 @@ kubectl apply -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/ref
 This file name must match the `subPath` and the key in the ConfigMap.
 
 ```bash
-wget https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/falco/new-rule/custom-falco-rule.yaml
+wget https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/domains/runtime-security/falco-writing-applying-a-new-rule/custom-falco-rule.yaml
 kubectl -n falco create configmap falco-custom-rules \
   --from-file=custom-falco-rule.yaml
 ```
@@ -125,7 +125,7 @@ kubectl -n <namespace> scale deployment <name> --replicas=0
 ## Cleanup
 
 ```bash
-kubectl delete -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/falco/new-rule/deployment.yaml
+kubectl delete -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/domains/runtime-security/falco-writing-applying-a-new-rule/deployment.yaml
 kubectl -n falco delete configmap falco-custom-rules
 ```
 
