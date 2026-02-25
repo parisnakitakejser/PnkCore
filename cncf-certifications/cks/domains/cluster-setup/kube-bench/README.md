@@ -6,7 +6,7 @@ start fixing common CIS benchmark findings.
 References:
 - https://www.cisecurity.org/cis-benchmarks
 - https://github.com/aquasecurity/kube-bench
-- https://aquasecurity.github.io/kube-bench/installation/
+- https://aquasecurity.github.io/kube-bench/latest/installation/
 
 ## 1) Install kube-bench
 
