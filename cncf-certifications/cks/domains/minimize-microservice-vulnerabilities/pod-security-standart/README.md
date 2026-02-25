@@ -12,8 +12,10 @@ workloads behave when they violate policy.
 Create the namespace and a default nginx Deployment:
 
 ```bash
-kubectl apply -f manifests/namespace.yaml
-kubectl apply -f manifests/deployment.yaml
+curl -O https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/domains/minimize-microservice-vulnerabilities/pod-security-standart/manifests/namespace.yaml
+curl -O https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/domains/minimize-microservice-vulnerabilities/pod-security-standart/manifests/deployment.yaml
+kubectl apply -f namespace.yaml
+kubectl apply -f deployment.yaml
 ```
 
 Confirm the Pod starts successfully:
@@ -39,15 +41,15 @@ Label the namespace to enforce a policy level:
 ```bash
 kubectl label ns pod-security-standart \
   pod-security.kubernetes.io/enforce=restricted
-kubectl delete -f manifests/deployment.yaml
-kubectl apply -f manifests/deployment.yaml
+kubectl delete -f deployment.yaml
+kubectl apply -f deployment.yaml
 ```
 
 You should see a warning like this:
 
 ```bash
-Warning: would violate PodSecurity "restricted:latest": allowPrivilegeEscalation != false (container "nginx" must set securityContext.allowPrivilegeEscalation=false), unrestricted capabilities (container "nginx" must set securityContext.capabilities.drop=["ALL"]), runAsNonRoot != true (pod or container "nginx" must set securityContext.runAsNonRoot=true), seccompProfile (pod or container "nginx" must set securityContext.seccompProfile.type to "RuntimeDefault" or "Localhost")
-deployment.apps/nginx created
+Warning: would violate PodSecurity "restricted:latest": allowPrivilegeEscalation != false (container "alpine" must set securityContext.allowPrivilegeEscalation=false), unrestricted capabilities (container "alpine" must set securityContext.capabilities.drop=["ALL"]), runAsNonRoot != true (pod or container "alpine" must set securityContext.runAsNonRoot=true), seccompProfile (pod or container "alpine" must set securityContext.seccompProfile.type to "RuntimeDefault" or "Localhost")
+deployment.apps/alpine created
 ```
 
 Then you can see we need some changes before the deployment will start so let's change the deployment file to look like this
