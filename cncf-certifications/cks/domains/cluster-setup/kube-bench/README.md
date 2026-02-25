@@ -16,10 +16,8 @@ Use the installer script in this folder. Pick the correct `ARCH` for your node
 Remote install (curl + execute):
 
 ```bash
-curl -sSL <RAW_URL>/install-kube-bench.sh | bash -s -- arm64
+curl -sSL https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/domains/cluster-setup/kube-bench/install-kube-bench.sh | bash -s -- arm64
 ```
-
-Replace `<RAW_URL>` with the raw URL to this script in your repo.
 
 Local install:
 
