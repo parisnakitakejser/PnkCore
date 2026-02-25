@@ -9,7 +9,7 @@ workloads behave when they violate policy.
 
 ## Step 1) Apply the demo manifests (setup)
 
-Create the namespace and a default nginx Deployment:
+Create the namespace and a default alpine Deployment:
 
 ```bash
 curl -O https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/cks/domains/minimize-microservice-vulnerabilities/pod-security-standart/manifests/namespace.yaml
