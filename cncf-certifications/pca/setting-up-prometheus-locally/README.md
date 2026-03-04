@@ -10,6 +10,20 @@ This lab runs Prometheus locally with Docker or Podman. The stack includes:
 - Docker or Podman
 - `docker compose` or `podman-compose`
 
+## Get the required files
+
+Download only the required files into your working folder:
+
+```bash
+mkdir -p provisioning/datasources
+
+curl -o docker-compose.yaml https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/pca/setting-up-prometheus-locally/docker-compose.yaml
+curl -o prometheus.yml https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/pca/setting-up-prometheus-locally/prometheus.yml
+curl -o provisioning/datasources/datasource.yml https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/pca/setting-up-prometheus-locally/provisioning/datasources/datasource.yml
+```
+
+Replace `<REPO_RAW_URL>` with the raw URL of this repository (GitHub raw or similar).
+
 ## Build the demo service image
 The compose file expects a local image named `prometheus-demo-service`. Build it from the LFS241 repo:
 
