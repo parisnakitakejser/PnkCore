@@ -14,11 +14,18 @@ Whether you’re building your first containerized app or designing advanced on-
 | Name |  Link |
 |---------------|------|
 | CKS Exam Prep: Environment Setup  | [Resources](cncf-certifications/cks/cluster-setup/README.md), [YouTube](https://youtu.be/hH4CsB1VehQ) |
+| CKS Exam Prep: Cluster Setup - Kube-bench (CIS Benchmarks) | [Resources](cncf-certifications/cks/domains/cluster-setup/kube-bench/README.md), [YouTube](https://youtu.be/Oa15rawOp2g) |
 | CKS Exam Prep: Microservice Vulnerabilities - Manage Kubernetes Secrets  | [Resources](cncf-certifications/cks/domains/minimize-microservice-vulnerabilities/manage-kubernetes-secrets/README.md), [YouTube](https://youtu.be/HHYj4C4ZJtI) |
+| CKS Exam Prep: Microservice Vulnerabilities - Pod Security Standard (PSS)  | [Resources](cncf-certifications/cks/domains/minimize-microservice-vulnerabilities/pod-security-standart/README.md), [YouTube](https://youtu.be/QTAVjqM8MkQ) |
 | CKS Exam Prep: Supply Chain Security - Image Footprint  | [Resources](cncf-certifications/cks/domains/supply-chain-security/image-footprint/README.md), [YouTube](https://youtu.be/DiFQE5j4tZ4) |
 | CKS Exam Prep: Supply Chain Security - Image Vulnerability Scanning With Trivy  | [Resources](cncf-certifications/cks/domains/supply-chain-security/image-vulnerability-scanning-with-trivy/README.md), [YouTube](https://youtu.be/P0RAnP93a-U) |
 | CKS Exam Prep: Runtime Security - Falco: Writing & Applying a New Rule  | [Resources](cncf-certifications/cks/domains/runtime-security/falco-writing-applying-a-new-rule/README.md), [YouTube](https://youtu.be/o-XMBPQ591U) |
 | CKS Exam Prep: Runtime Security - Audit logging  | [Resources](cncf-certifications/cks/domains/runtime-security/audit-logging/README.md), [YouTube](https://youtu.be/T0fj-z8zzuA) |
+
+## PCA
+| Name |  Link |
+|---------------|------|
+| PCA Exam Prep: Setting Up Prometheus Locally  | [Resources](cncf-certifications/pca/setting-up-prometheus-locally/README.md), [YouTube](https://youtu.be/9Rg94Usjyl0) |
 
 
 # Kubernetes
