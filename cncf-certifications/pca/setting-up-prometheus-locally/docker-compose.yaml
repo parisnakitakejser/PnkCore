@@ -1,0 +1,64 @@
+version: "3.9"
+
+services:
+  # Prometheus
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    restart: unless-stopped
+
+  # Node Exporter
+  node-exporter:
+    image: docker.io/prom/node-exporter:latest
+    container_name: node-exporter
+    restart: unless-stopped
+    pid: host
+    ports:
+      - "9100:9100"
+    volumes:
+      - /:/host:ro,rslave
+    command:
+      - '--path.rootfs=/host'
+
+  # Grafana
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    restart: unless-stopped
+
+    ports:
+      - "3030:3000"
+
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=supersecret
+      - GF_USERS_ALLOW_SIGN_UP=false
+
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./provisioning:/etc/grafana/provisioning
+
+  # Demo services
+  d1:
+    image: prometheus-demo-service
+    container_name: prometheus-demo-service-1
+    restart: unless-stopped
+
+  d2:
+    image: prometheus-demo-service
+    container_name: prometheus-demo-service-2
+    restart: unless-stopped
+
+  d3:
+    image: prometheus-demo-service
+    container_name: prometheus-demo-service-3
+    restart: unless-stopped
+
+volumes:
+  prometheus-data:
+  grafana-data:
