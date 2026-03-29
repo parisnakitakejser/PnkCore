@@ -27,6 +27,11 @@ Whether you’re building your first containerized app or designing advanced on-
 |---------------|------|
 | PCA Exam Prep: Setting Up Prometheus Locally  | [Resources](cncf-certifications/pca/setting-up-prometheus-locally/README.md), [YouTube](https://youtu.be/9Rg94Usjyl0) |
 
+## CAPA
+| Name |  Link |
+|---------------|------|
+| CAPA Exam Prep: Setting Up Argo CD  | [Resources](cncf-certifications/capa/domains/argo-cd/setting-up-argo-cd/README.md), [YouTube](https://youtu.be/5-uzGnq2kCw) |
+
 
 # Kubernetes
 
