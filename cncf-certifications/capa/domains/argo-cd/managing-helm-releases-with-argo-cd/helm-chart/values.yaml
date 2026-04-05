@@ -1,0 +1,15 @@
+replicaCount: 3
+
+nameOverride: ""
+fullnameOverride: ""
+
+image:
+  repository: nginx
+  tag: trixie
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+
+containerPort: 8080
