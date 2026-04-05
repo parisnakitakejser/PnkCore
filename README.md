@@ -10,7 +10,9 @@ Whether you’re building your first containerized app or designing advanced on-
 
 # Cloud Native Certifications
 
-## CKS
+## Kubestronaut
+
+### Certified Kubernetes Security Specialist (CKS)
 | Name |  Link |
 |---------------|------|
 | CKS Exam Prep: Environment Setup  | [Resources](cncf-certifications/cks/cluster-setup/README.md), [YouTube](https://youtu.be/hH4CsB1VehQ) |
@@ -22,12 +24,14 @@ Whether you’re building your first containerized app or designing advanced on-
 | CKS Exam Prep: Runtime Security - Falco: Writing & Applying a New Rule  | [Resources](cncf-certifications/cks/domains/runtime-security/falco-writing-applying-a-new-rule/README.md), [YouTube](https://youtu.be/o-XMBPQ591U) |
 | CKS Exam Prep: Runtime Security - Audit logging  | [Resources](cncf-certifications/cks/domains/runtime-security/audit-logging/README.md), [YouTube](https://youtu.be/T0fj-z8zzuA) |
 
-## PCA
+## Golden Kubestronaut
+
+### Prometheus Certified Associate (PCA)
 | Name |  Link |
 |---------------|------|
 | PCA Exam Prep: Setting Up Prometheus Locally  | [Resources](cncf-certifications/pca/setting-up-prometheus-locally/README.md), [YouTube](https://youtu.be/9Rg94Usjyl0) |
 
-## CAPA
+### Certified Argo Project Associate (CAPA)
 | Name |  Link |
 |---------------|------|
 | CAPA Exam Prep: Setting Up Argo CD  | [Resources](cncf-certifications/capa/domains/argo-cd/setting-up-argo-cd/README.md), [YouTube](https://youtu.be/5-uzGnq2kCw) |
