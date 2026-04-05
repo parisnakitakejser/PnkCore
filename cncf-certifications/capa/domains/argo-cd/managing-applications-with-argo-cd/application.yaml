@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: simple-test-app
+spec:
+  destination:
+    namespace: 'argo-simple-test-app'
+    server: https://kubernetes.default.svc
+  source:
+    path: cncf-certifications/capa/domains/argo-cd/managing-applications-with-argo-cd/example-app
+    repoURL: https://github.com/parisnakitakejser/PnkCore.git
+    targetRevision: HEAD
+  sources: []
+  project: default
+  syncPolicy:
+    automated: null
+    syncOptions:
+      - CreateNamespace=true
