@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-example-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: argocd-example-app
+  template:
+    metadata:
+      labels:
+        app: argocd-example-app
+    spec:
+      containers:
+      - name: argocd-example-app
+        image: nginx:trixie
+        ports:
+        - containerPort: 8080
