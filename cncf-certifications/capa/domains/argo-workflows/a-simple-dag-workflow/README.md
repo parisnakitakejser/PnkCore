@@ -44,7 +44,7 @@ This template gives you a reusable building block for multiple workflow steps.
 Apply the template first so the DAG workflow can reference it by name:
 
 ```bash
-kubectl apply -f echo-workflow-template.yaml
+kubectl apply -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/capa/domains/argo-workflows/a-simple-dag-workflow/echo-workflow-template.yaml
 ```
 
 ## 2. Create a DAG Workflow
@@ -114,7 +114,7 @@ This is a common exam-style example because it shows how DAG dependencies contro
 Once the template exists in the cluster, create a workflow run from the DAG definition:
 
 ```bash
-kubectl create -f simple-dag-workflow.yaml
+kubectl create -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/capa/domains/argo-workflows/a-simple-dag-workflow/simple-dag-workflow.yaml
 ```
 
 ## 3. Service Account Permissions for a Lab
