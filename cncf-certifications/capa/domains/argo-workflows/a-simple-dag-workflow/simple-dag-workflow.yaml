@@ -1,0 +1,50 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: dag-diamond-
+  namespace: argo
+spec:
+  entrypoint: diamond
+  serviceAccountName: argo
+  templates:
+    - name: diamond
+      dag:
+        tasks:
+          - name: A
+            arguments:
+              parameters:
+                - name: message
+                  value: A
+            templateRef:
+              name: echo-template
+              template: echo
+
+          - name: B
+            dependencies: [A]
+            arguments:
+              parameters:
+                - name: message
+                  value: B
+            templateRef:
+              name: echo-template
+              template: echo
+
+          - name: C
+            dependencies: [A]
+            arguments:
+              parameters:
+                - name: message
+                  value: C
+            templateRef:
+              name: echo-template
+              template: echo
+
+          - name: D
+            dependencies: [B, C]
+            arguments:
+              parameters:
+                - name: message
+                  value: D
+            templateRef:
+              name: echo-template
+              template: echo

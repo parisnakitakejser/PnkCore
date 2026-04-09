@@ -1,4 +1,4 @@
-# CAPA Exam Prep: Setting Up Argo Workflows
+# CAPA Exam Prep: Argo Workflows - Setting Up Argo Workflows
 
 This guide covers the basic Argo Workflows setup flow you should know for CAPA-style lab work:
 

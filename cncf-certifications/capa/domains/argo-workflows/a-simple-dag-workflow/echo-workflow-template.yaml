@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: WorkflowTemplate
+metadata:
+  name: echo-template
+  namespace: argo
+spec:
+  serviceAccountName: argo
+  templates:
+    - name: echo
+      inputs:
+        parameters:
+          - name: message
+      container:
+        image: alpine:latest
+        command: [echo, "{{inputs.parameters.message}}"]
