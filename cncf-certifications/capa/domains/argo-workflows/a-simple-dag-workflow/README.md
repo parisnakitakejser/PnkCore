@@ -128,9 +128,9 @@ https://argo-workflows.readthedocs.io/en/latest/service-accounts/
 Example lab-friendly RoleBinding:
 
 ```bash
-kubectl create rolebinding default-admin \
+kubectl create rolebinding argo-admin \
   --clusterrole=admin \
-  --serviceaccount=argo:default \
+  --serviceaccount=argo:argo \
   -n argo
 ```
 
