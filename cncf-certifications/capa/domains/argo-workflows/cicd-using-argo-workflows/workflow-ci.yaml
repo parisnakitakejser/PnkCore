@@ -1,0 +1,41 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  name: python-app
+spec:
+  entrypoint: python-app
+  templates:
+    - name: python-app
+      steps:
+        - - name: build
+            template: build
+        - - name: test
+            template: test
+          - name: trivy
+            template: trivy
+        - - name: deploy
+            template: deploy
+
+    - name: build
+      container:
+        image: python:3.14
+        command: [python]
+        args: ["-c", "print('build')"]
+
+    - name: test
+      container:
+        image: python:3.14
+        command: [python]
+        args: ["-c", "print('test')"]
+
+    - name: trivy
+      container:
+        image: python:3.14
+        command: [python]
+        args: ["-c", "print('trivy')"]
+
+    - name: deploy
+      container:
+        image: python:3.14
+        command: [python]
+        args: ["-c", "print('deploy')"]

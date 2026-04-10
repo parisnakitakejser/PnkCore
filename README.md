@@ -38,6 +38,7 @@ Whether you’re building your first containerized app or designing advanced on-
 | CAPA Exam Prep: Argo CD - Managing Applications with Argo CD | [Resources](cncf-certifications/capa/domains/argo-cd/managing-applications-with-argo-cd/README.md), [YouTube](https://youtu.be/v_frYsyDa-s) |
 | CAPA Exam Prep: Argo Workflows - Setting up Argo Workflows | [Resources](cncf-certifications/capa/domains/argo-workflows/setting-up-argo-workflows/README.md) |
 | CAPA Exam Prep: Argo Workflows - A Simple DAG workflow | [Resources](cncf-certifications/capa/domains/argo-workflows/a-simple-dag-workflow/README.md) |
+| CAPA Exam Prep: Argo Workflows - CI/CD Using Argo Workflows | [Resources](cncf-certifications/capa/domains/argo-workflows/cicd-using-argo-workflows/README.md) |
 
 
 # Kubernetes
