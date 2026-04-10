@@ -79,7 +79,7 @@ This is a simplified study example. In a real pipeline, the build and deploy sta
 Apply the workflow file to create a run:
 
 ```bash
-kubectl apply -f workflow-ci.yaml -n argo
+kubectl apply -n argo -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/capa/domains/argo-workflows/cicd-using-argo-workflows/workflow-ci.yaml
 ```
 
 Because this workflow uses a fixed `metadata.name`, applying it creates or updates the same named workflow resource: `python-app`.
