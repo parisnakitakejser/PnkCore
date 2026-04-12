@@ -36,7 +36,7 @@ Whether you’re building your first containerized app or designing advanced on-
 |---------------|------|
 | CAPA Exam Prep: Argp CD - Setting Up Argo CD  | [Resources](cncf-certifications/capa/domains/argo-cd/setting-up-argo-cd/README.md), [YouTube](https://youtu.be/5-uzGnq2kCw) |
 | CAPA Exam Prep: Argo CD - Managing Applications with Argo CD | [Resources](cncf-certifications/capa/domains/argo-cd/managing-applications-with-argo-cd/README.md), [YouTube](https://youtu.be/v_frYsyDa-s) |
-| CAPA Exam Prep: Argo Workflows - Setting up Argo Workflows | [Resources](cncf-certifications/capa/domains/argo-workflows/setting-up-argo-workflows/README.md) |
+| CAPA Exam Prep: Argo Workflows - Setting up Argo Workflows | [Resources](cncf-certifications/capa/domains/argo-workflows/setting-up-argo-workflows/README.md), [YouTube](https://youtu.be/AP9LLGRiggI) |
 | CAPA Exam Prep: Argo Workflows - A Simple DAG workflow | [Resources](cncf-certifications/capa/domains/argo-workflows/a-simple-dag-workflow/README.md) |
 | CAPA Exam Prep: Argo Workflows - CI/CD Using Argo Workflows | [Resources](cncf-certifications/capa/domains/argo-workflows/cicd-using-argo-workflows/README.md) |
 | CAPA Exam Prep: Argo Workflows - Reuse Artifacts in a Workflow | [Resources](cncf-certifications/capa/domains/argo-workflows/reuse-artifacts-in-workflow/README.md) |
