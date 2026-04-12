@@ -1,0 +1,31 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: suspend-template-
+spec:
+  entrypoint: suspend
+  serviceAccountName: argo
+  templates:
+  - name: suspend
+    steps:
+    - - name: build
+        template: hello-world
+    - - name: approve
+        template: approve
+    - - name: delay
+        template: delay
+    - - name: release
+        template: hello-world
+
+  - name: approve
+    suspend: {} # Default are to suspend indefinitely until manually resumed. You can also specify a duration to automatically resume after a certain time.
+
+  - name: delay
+    suspend:
+      duration: "20" # Must be a string. Default unit is seconds. Could also be a Duration, e.g.: "2m", "6h"
+
+  - name: hello-world
+    container:
+      image: busybox
+      command: [echo]
+      args: ["hello world"]

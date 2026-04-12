@@ -43,6 +43,7 @@ Whether you’re building your first containerized app or designing advanced on-
 | CAPA Exam Prep: Argo Workflows - How Conditionals Work in Argo Workflows | [Resources](cncf-certifications/capa/domains/argo-workflows/how-conditionals-works/README.md) |
 | CAPA Exam Prep: Argo Workflows - How Recursion Works in Argo Workflows | [Resources](cncf-certifications/capa/domains/argo-workflows/how-recursion-works/README.md) |
 | CAPA Exam Prep: Argo Workflows - How to Work with Sidecars in Argo Workflows | [Resources](cncf-certifications/capa/domains/argo-workflows/how-to-work-with-sidecars/README.md) |
+| CAPA Exam Prep: Argo Workflows - How to Use Suspend in Argo Workflows | [Resources](cncf-certifications/capa/domains/argo-workflows/how-to-use-suspend/README.md) |
 
 
 # Kubernetes
