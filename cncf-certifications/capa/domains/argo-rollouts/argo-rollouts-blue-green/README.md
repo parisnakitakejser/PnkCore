@@ -24,7 +24,9 @@ Blue/green rollouts usually use:
 
 Apply these Services first:
 
-File: [bluegreen-services.yaml](/Users/parisnakitakejser/Developer/PnkCore/cncf-certifications/capa/domains/argo-rollouts/argo-rollouts-blue-green/bluegreen-services.yaml)
+```bash
+kubectl apply -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/capa/domains/argo-rollouts/argo-rollouts-blue-green/bluegreen-services.yaml
+```
 
 The Rollouts controller updates the selectors behind these Services during the rollout process.
 
@@ -32,13 +34,10 @@ The Rollouts controller updates the selectors behind these Services during the r
 
 Apply this Rollout manifest for the first version:
 
-File: [rollout-blue.yaml](/Users/parisnakitakejser/Developer/PnkCore/cncf-certifications/capa/domains/argo-rollouts/argo-rollouts-blue-green/rollout-blue.yaml)
-
 Apply the resources:
 
 ```bash
-kubectl apply -f bluegreen-services.yaml
-kubectl apply -f rollout-blue.yaml
+kubectl apply -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/capa/domains/argo-rollouts/argo-rollouts-blue-green/rollout-blue.yaml
 ```
 
 ## 3. Inspect the Rollout
@@ -59,12 +58,10 @@ kubectl argo rollouts get rollout rollout-bluegreen --watch
 
 To create the new preview version, change the image from `blue` to `green`:
 
-File: [rollout-green.yaml](/Users/parisnakitakejser/Developer/PnkCore/cncf-certifications/capa/domains/argo-rollouts/argo-rollouts-blue-green/rollout-green.yaml)
-
 Apply the updated Rollout:
 
 ```bash
-kubectl apply -f rollout-green.yaml
+kubectl apply -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/capa/domains/argo-rollouts/argo-rollouts-blue-green/rollout-green.yaml
 ```
 
 Because `autoPromotionEnabled: false` is set, the rollout will pause before switching production traffic.
@@ -113,8 +110,3 @@ This is the key blue/green behavior you should understand for the exam.
 - Know that blue/green creates a new version before switching live traffic
 - Know that `autoPromotionEnabled: false` pauses the rollout before cutover
 - Know how to promote the rollout manually with `kubectl argo rollouts promote`
-
-## References
-
-- Linux Foundation lab reference: https://trainingportal.linuxfoundation.org/learn/course/devops-and-workflow-management-with-argo-lfs256/argo-rollouts/lab-exercises?page=2
-- Argo Rollouts blue/green docs: https://argo-rollouts.readthedocs.io/en/stable/features/bluegreen/
