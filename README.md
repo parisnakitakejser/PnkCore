@@ -46,7 +46,7 @@ Whether you’re building your first containerized app or designing advanced on-
 | CAPA Exam Prep: Argo Workflows - How to Use Suspend in Argo Workflows | [Resources](cncf-certifications/capa/domains/argo-workflows/how-to-use-suspend/README.md) |
 | CAPA Exam Prep: Argo Rollouts - Argo Rollouts - Installing Argo Rollouts | [Resources](cncf-certifications/capa/domains/argo-rollouts/installing-argo-rollouts/README.md), [Youtube](https://youtu.be/EM-GlksbfsQ) |
 | CAPA Exam Prep: Argo Rollouts - Argo Rollouts - Argo Rollouts Blue-Green | [Resources](cncf-certifications/capa/domains/argo-rollouts/argo-rollouts-blue-green/README.md), [YouTube](https://youtu.be/fh85c1RJIN0) |
-| CAPA Exam Prep: Argo Events - Setting Up Event Triggers with Argo | [Resources](cncf-certifications/capa/domains/argo-events/setting-up-event-triggers-with-argo/README.md) |
+| CAPA Exam Prep: Argo Events - Setting Up Event Triggers with Argo | [Resources](cncf-certifications/capa/domains/argo-events/setting-up-event-triggers-with-argo/README.md), [YouTube](https://youtu.be/zoXIuF-DjnU) |
 
 
 # Kubernetes
