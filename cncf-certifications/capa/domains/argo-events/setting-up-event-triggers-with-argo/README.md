@@ -40,7 +40,7 @@ Argo Events needs an EventBus for event transport between sources and sensors.
 Apply the example native EventBus:
 
 ```bash
-kubectl apply -n argo-events -f eventbus-native.yaml
+kubectl apply -n argo-events -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/capa/domains/argo-events/setting-up-event-triggers-with-argo/eventbus-native.yaml
 ```
 
 This gives the EventSource and Sensor a messaging layer they can use to communicate.
@@ -50,7 +50,7 @@ This gives the EventSource and Sensor a messaging layer they can use to communic
 Deploy the example webhook EventSource:
 
 ```bash
-kubectl apply -n argo-events -f eventsource-webhook.yaml
+kubectl apply -n argo-events -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/capa/domains/argo-events/setting-up-event-triggers-with-argo/eventsource-webhook.yaml
 ```
 
 This creates an HTTP endpoint that Argo Events can listen on.
@@ -62,8 +62,8 @@ The sensor needs permission to watch events and trigger workflows.
 Apply the example RBAC manifests:
 
 ```bash
-kubectl apply -n argo-events -f sensor-rbac.yaml
-kubectl apply -n argo-events -f workflow-rbac.yaml
+kubectl apply -n argo-events -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/capa/domains/argo-events/setting-up-event-triggers-with-argo/sensor-rbac.yaml
+kubectl apply -n argo-events -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/capa/domains/argo-events/setting-up-event-triggers-with-argo/workflow-rbac.yaml
 ```
 
 ## 5. Create the Webhook Sensor
@@ -71,7 +71,7 @@ kubectl apply -n argo-events -f workflow-rbac.yaml
 Deploy the example sensor:
 
 ```bash
-kubectl apply -n argo-events -f sensor-webhook.yaml
+kubectl apply -n argo-events -f https://raw.githubusercontent.com/parisnakitakejser/PnkCore/refs/heads/main/cncf-certifications/capa/domains/argo-events/setting-up-event-triggers-with-argo/sensor-webhook.yaml
 ```
 
 The sensor waits for events from the webhook EventSource and reacts when one arrives.
