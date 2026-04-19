@@ -48,6 +48,8 @@ Whether you’re building your first containerized app or designing advanced on-
 | CAPA Exam Prep: Argo Rollouts - Argo Rollouts - Argo Rollouts Blue-Green | [Resources](cncf-certifications/capa/domains/argo-rollouts/argo-rollouts-blue-green/README.md), [YouTube](https://youtu.be/fh85c1RJIN0) |
 | CAPA Exam Prep: Argo Events - Setting Up Event Triggers with Argo | [Resources](cncf-certifications/capa/domains/argo-events/setting-up-event-triggers-with-argo/README.md), [YouTube](https://youtu.be/zoXIuF-DjnU) |
 
+### OpenTelemetry Certified Associate (OTCA)
+| CAPA Exam Prep: OpenTelemtry Test Environment Setup  | [Resources](cncf-certifications/otca/test-environment-setup/README.md) |
 
 # Kubernetes
 

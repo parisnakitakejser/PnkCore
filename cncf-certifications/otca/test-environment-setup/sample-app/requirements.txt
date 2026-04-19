@@ -1,0 +1,5 @@
+opentelemetry-sdk
+opentelemetry-exporter-otlp-proto-grpc
+python-dotenv
+pyroscope-io
+pyroscope-otel

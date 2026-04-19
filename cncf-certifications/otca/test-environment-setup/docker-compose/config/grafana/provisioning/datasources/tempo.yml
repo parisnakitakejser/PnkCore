@@ -1,0 +1,38 @@
+apiVersion: 1
+
+deleteDatasources:
+  - name: Tempo
+    orgId: 1
+
+datasources:
+  - name: Tempo
+    type: tempo
+    access: proxy
+    uid: tempo_datasource
+    url: http://tempo:3200
+    basicAuth: false
+    isDefault: false
+    version: 1
+    editable: true
+    jsonData:
+      tracesToLogsV2:
+        datasourceUid: "loki_datasource"
+        spanStartTimeShift: "-2s"
+        spanEndTimeShift: "2s"
+        tags:
+          - key: "service.name"
+            value: "service_name"
+        filterByTraceID: true
+        filterBySpanID: false
+      tracesToProfiles:
+        datasourceUid: "pyroscope_datasource"
+        tags:
+          - key: "service.name"
+            value: "service_name"
+        profileTypeId: "process_cpu:cpu:nanoseconds:cpu:nanoseconds"
+      serviceMap:
+        datasourceUid: "prometheus_datasource"
+      nodeGraph:
+        enabled: true
+      search:
+        hide: false

@@ -1,0 +1,91 @@
+name: otca-traning-enviorment
+
+version: "3.7"
+
+services:
+  prometheus:
+    image: prom/prometheus:v3.11.2
+    container_name: prometheus
+    volumes:
+      - ./config/prometheus/config.yml:/etc/prometheus/prometheus.yml:Z
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--enable-feature=exemplar-storage"
+    ports:
+      - "9090:9090"
+    networks:
+      - otca-observability
+
+  opentelemetry-collector:
+    image: otel/opentelemetry-collector-contrib:0.150.1
+    container_name: opentelemetry-collector
+    volumes:
+      - ./config/collector/config.yml:/etc/opentelemetry-collector.yml:Z
+    command:
+      - "--config=/etc/opentelemetry-collector.yml"
+    ports:
+      - "4317:4317"
+      - "13133:13133"
+      - "8889:8889"
+    networks:
+      - otca-observability
+    stop_grace_period: 1s
+
+  tempo:
+    image: grafana/tempo:2.10.0
+    container_name: tempo
+    command:
+      - "-config.file=/etc/tempo/tempo.yml"
+    volumes:
+      - ./config/tempo/tempo.yml:/etc/tempo/tempo.yml:Z
+    ports:
+      - "3200:3200"
+    networks:
+      - otca-observability
+
+  pyroscope:
+    image: grafana/pyroscope:latest
+    container_name: pyroscope
+    ports:
+      - "4040:4040"
+    networks:
+      - otca-observability
+
+  loki:
+    image: grafana/loki:3.6.10
+    ports:
+      - "3100:3100"
+    command:
+      - "-config.file=/etc/loki/local-config.yaml"
+    networks:
+      - otca-observability
+
+  promtail:
+    image: grafana/promtail:3.6.10
+    container_name: promtail
+    volumes:
+      - /var/log:/var/log:Z
+      - ./config/promtail/promtail.yml:/etc/promtail/config.yml:Z
+    command:
+      - "-config.file=/etc/promtail/config.yml"
+    networks:
+      - otca-observability
+
+  grafana:
+    image: grafana/grafana:13.0.1
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./config/grafana/provisioning:/etc/grafana/provisioning:Z
+    environment:
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ORG_ROLE=Editor
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+      - GF_AUTH_DISABLE_LOGIN_FORM=true
+    networks:
+      - otca-observability
+
+networks:
+  otca-observability:
+    driver: bridge
