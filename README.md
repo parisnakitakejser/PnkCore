@@ -49,6 +49,7 @@ Whether you’re building your first containerized app or designing advanced on-
 | CAPA Exam Prep: Argo Events - Setting Up Event Triggers with Argo | [Resources](cncf-certifications/capa/domains/argo-events/setting-up-event-triggers-with-argo/README.md), [YouTube](https://youtu.be/zoXIuF-DjnU) |
 
 ### OpenTelemetry Certified Associate (OTCA)
+| Name |  Link |
 | CAPA Exam Prep: OpenTelemtry Test Environment Setup  | [Resources](cncf-certifications/otca/test-environment-setup/README.md) |
 
 # Kubernetes
