@@ -50,6 +50,7 @@ Whether you’re building your first containerized app or designing advanced on-
 
 ### OpenTelemetry Certified Associate (OTCA)
 | Name |  Link |
+|---------------|------|
 | CAPA Exam Prep: OpenTelemtry Test Environment Setup  | [Resources](cncf-certifications/otca/test-environment-setup/README.md) |
 
 # Kubernetes
