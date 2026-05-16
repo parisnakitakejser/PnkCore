@@ -57,6 +57,7 @@ Whether you’re building your first containerized app or designing advanced on-
 | Name |  Link |
 |---------------|------|
 | CCA Exam Prep: Installation and Configuration - Cilium Test Environment Setup  | [Resources](cncf-certifications/cca/domains/installation-and-configuration/test-environment-setup/README.md) |
+| CCA Exam Prep: Installation and Configuration - Monitoring the Application with Hubble  | [Resources](cncf-certifications/cca/domains/installation-and-configuration/monitoring-the-application-with-hubble/README.md) |
 
 # Kubernetes
 
