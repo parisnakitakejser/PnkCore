@@ -83,10 +83,3 @@ Whether you’re building your first containerized app or designing advanced on-
 | Name | Description | Link |
 |---------------|-----------------|------|
 | Collecting SMART Disk Metrics from Ceph with OpenTelemetry  | Video Tutorial  Learn how to send metrics from your Ceph cluster with OTel to a observability endpoint. | [YouTube](https://youtu.be/9vn8SEEfmAg), [Resources](ceph/observability/collecting-smart-disk-metrics-from-ceph-with-opentelemetry/README.md) |
-
-
-<style>
-    table {
-        width: 100%;
-    }
-</style>
