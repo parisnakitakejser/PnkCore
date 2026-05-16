@@ -56,7 +56,7 @@ Whether you’re building your first containerized app or designing advanced on-
 ### Cilium Certified Associate (CCA)
 | Name |  Link |
 |---------------|------|
-| CCA Exam Prep: Cilium Test Environment Setup  | [Resources](cncf-certifications/cca/test-environment-setup/README.md) |
+| CCA Exam Prep: Installation and Configuration - Cilium Test Environment Setup  | [Resources](cncf-certifications/cca/domains/installation-and-configuration/test-environment-setup/README.md) |
 
 # Kubernetes
 
