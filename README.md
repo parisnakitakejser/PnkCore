@@ -56,8 +56,12 @@ Whether you’re building your first containerized app or designing advanced on-
 ### Cilium Certified Associate (CCA)
 | Name |  Link |
 |---------------|------|
-| CCA Exam Prep: Installation and Configuration - Cilium Test Environment Setup  | [Resources](cncf-certifications/cca/domains/installation-and-configuration/test-environment-setup/README.md) |
-| CCA Exam Prep: Installation and Configuration - Monitoring the Application with Hubble  | [Resources](cncf-certifications/cca/domains/installation-and-configuration/monitoring-the-application-with-hubble/README.md) |
+| CCA Exam Prep: Installation and Configuration - Cilium Test Environment Setup | [Resources](cncf-certifications/cca/domains/installation-and-configuration/test-environment-setup/README.md) |
+| CCA Exam Prep: Installation and Configuration - Monitoring the Application with Hubble | [Resources](cncf-certifications/cca/domains/installation-and-configuration/monitoring-the-application-with-hubble/README.md) |
+| CCA Exam Prep: Installation and Configuration - Cilium In IPAM Mode | [Resources](cncf-certifications/cca/domains/installation-and-configuration/cilium-in-ipam-mode/README.md) |
+| CCA Exam Prep: Installation and Configuration - Cilium In Multi-Pool IPAM Mode | [Resources](cncf-certifications/cca/domains/installation-and-configuration/cilium-in-multi-pool-ipam-mode/README.md) |
+| CCA Exam Prep: Installation and Configuration - IPv6 Or Dual-Stack Cluster | [Resources](cncf-certifications/cca/domains/installation-and-configuration/ipv6-or-dualstack-cluster/README.md) |
+| CCA Exam Prep: Network Observability - Setup Hubble with kind | [Resources](cncf-certifications/cca/domains/network-observability/00-setup-hubble-with-kind/README.md) |
 
 # Kubernetes
 
