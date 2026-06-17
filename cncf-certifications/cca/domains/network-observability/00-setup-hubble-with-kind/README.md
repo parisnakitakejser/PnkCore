@@ -183,25 +183,14 @@ Connected Nodes: <ready>/<total>
 
 ## 7. Run a Simple Hubble Smoke Test
 
-Create a namespace with one web pod and one client pod:
+Create a namespace with one web pod, one client pod, and one Service by applying
+the local manifests:
 
 ```bash
-kubectl create namespace hubble-demo
-
-kubectl -n hubble-demo run web \
-  --image=nginx:1.27-alpine \
-  --labels=app=web \
-  --port=80
-
-kubectl -n hubble-demo run client \
-  --image=curlimages/curl:8.11.1 \
-  --restart=Never \
-  --command -- sleep 1d
+kubectl apply -f manifests/
 
 kubectl -n hubble-demo wait pod/web --for=condition=Ready --timeout=120s
 kubectl -n hubble-demo wait pod/client --for=condition=Ready --timeout=120s
-
-kubectl -n hubble-demo expose pod web --port=80 --target-port=80
 ```
 
 Generate one request:

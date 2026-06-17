@@ -1,4 +1,4 @@
-# # CCA Exam Preparation: Network Observability - Observing Pod-to-Pod Traffic
+# CCA Exam Preparation: Network Observability - Observing Pod-to-Pod Traffic
 
 This lab creates two pods and uses Hubble to observe traffic between them.
 
