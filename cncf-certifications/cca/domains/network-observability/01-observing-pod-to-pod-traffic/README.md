@@ -11,7 +11,8 @@ This lab creates two pods and uses Hubble to observe traffic between them.
 
 ## Prerequisites
 
-- Complete the root setup guide first.
+- Complete [Setup Hubble with kind](../00-setup-hubble-with-kind/README.md)
+  first.
 - Hubble status works:
 
 ```bash
