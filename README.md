@@ -62,6 +62,7 @@ Whether you’re building your first containerized app or designing advanced on-
 | CCA Exam Prep: Installation and Configuration - Cilium In Multi-Pool IPAM Mode | [Resources](cncf-certifications/cca/domains/installation-and-configuration/cilium-in-multi-pool-ipam-mode/README.md) |
 | CCA Exam Prep: Installation and Configuration - IPv6 Or Dual-Stack Cluster | [Resources](cncf-certifications/cca/domains/installation-and-configuration/ipv6-or-dualstack-cluster/README.md) |
 | CCA Exam Prep: Network Observability - Setup Hubble with kind | [Resources](cncf-certifications/cca/domains/network-observability/00-setup-hubble-with-kind/README.md) |
+| CCA Exam Prep: Network Observability - Observing Pod-to-Pod Traffic | [Resources](cncf-certifications/cca/domains/network-observability/01-observing-pod-to-pod-traffic/README.md) |
 
 # Kubernetes
 
