@@ -1,0 +1,62 @@
+apiVersion: "v1"
+kind: "Namespace"
+metadata:
+  name: "rule-lab"
+---
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  name: "web"
+  namespace: "rule-lab"
+  labels:
+    app: "web"
+spec:
+  containers:
+    - name: "web"
+      image: "nginx:1.27"
+      ports:
+        - containerPort: 80
+---
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "web"
+  namespace: "rule-lab"
+spec:
+  selector:
+    app: "web"
+  ports:
+    - port: 80
+      targetPort: 80
+---
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  name: "good-client"
+  namespace: "rule-lab"
+  labels:
+    role: "allowed"
+spec:
+  containers:
+    - name: "good-client"
+      image: "curlimages/curl:8.8.0"
+      command:
+        - "sh"
+        - "-c"
+        - "sleep 365d"
+---
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  name: "bad-client"
+  namespace: "rule-lab"
+  labels:
+    role: "blocked"
+spec:
+  containers:
+    - name: "bad-client"
+      image: "curlimages/curl:8.8.0"
+      command:
+        - "sh"
+        - "-c"
+        - "sleep 365d"

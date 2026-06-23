@@ -1,0 +1,19 @@
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata:
+  name: web-ingress-from-good-client
+  labels:
+    lesson: rule-basics
+spec:
+  description: Allow only selected clients to reach the web server on TCP port 80.
+  endpointSelector:
+    matchLabels:
+      app: web
+  ingress:
+    - fromEndpoints:
+        - matchLabels:
+            role: allowed
+      toPorts:
+        - ports:
+            - port: "80"
+              protocol: TCP

@@ -1,0 +1,32 @@
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata:
+  name: good-client-egress-to-web
+  labels:
+    lesson: rule-basics
+spec:
+  description: Allow good-client to resolve DNS and connect to web on TCP port 80.
+  endpointSelector:
+    matchLabels:
+      role: allowed
+  egress:
+    - toEndpoints:
+        - matchLabels:
+            k8s:io.kubernetes.pod.namespace: kube-system
+            k8s:k8s-app: kube-dns
+      toPorts:
+        - ports:
+            - port: "53"
+              protocol: UDP
+            - port: "53"
+              protocol: TCP
+          rules:
+            dns:
+              - matchPattern: "*"
+    - toEndpoints:
+        - matchLabels:
+            app: web
+      toPorts:
+        - ports:
+            - port: "80"
+              protocol: TCP
