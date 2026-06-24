@@ -67,6 +67,8 @@ Whether you’re building your first containerized app or designing advanced on-
 | CCA Exam Prep: Network Policy - Rule Basics | [Resources](cncf-certifications/cca/domains/network-policy/00-rule-basics/README.md) |
 | CCA Exam Prep: Network Policy - Policy Enforcement Modes | [Resources](cncf-certifications/cca/domains/network-policy/01-policy-enforcement-modes/README.md) |
 | CCA Exam Prep: Network Policy - Layer 3 Endpoints Based | [Resources](cncf-certifications/cca/domains/network-policy/02-layer-3-endpoints-based/README.md) |
+| CCA Exam Prep: Network Policy - Layer 3 Services Based | [Resources](cncf-certifications/cca/domains/network-policy/03-layer-3-services-based/README.md) |
+| CCA Exam Prep: Network Policy - Layer 3 Entities Based | [Resources](cncf-certifications/cca/domains/network-policy/04-layer-3-entities-based/README.md) |
 
 # Kubernetes
 
