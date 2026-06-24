@@ -1,0 +1,17 @@
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata:
+  name: allow-web-ingress-from-client
+  namespace: policy-lab
+spec:
+  endpointSelector:
+    matchLabels:
+      app: web
+  ingress:
+    - fromEndpoints:
+        - matchLabels:
+            role: client
+      toPorts:
+        - ports:
+            - port: "80"
+              protocol: TCP

@@ -1,0 +1,17 @@
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata:
+  name: allow-client-egress-to-web
+  namespace: policy-lab
+spec:
+  endpointSelector:
+    matchLabels:
+      role: client
+  egress:
+    - toEndpoints:
+        - matchLabels:
+            app: web
+      toPorts:
+        - ports:
+            - port: "80"
+              protocol: TCP
