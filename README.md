@@ -72,6 +72,7 @@ Whether you’re building your first containerized app or designing advanced on-
 | CCA Exam Prep: Network Policy - Layer 3 IP CIDR Based | [Resources](cncf-certifications/cca/domains/network-policy/05-layer-3-ip-cidr-based/README.md) |
 | CCA Exam Prep: Network Policy - Layer 3 DNS Based | [Resources](cncf-certifications/cca/domains/network-policy/06-layer-3-dns-based/README.md) |
 | CCA Exam Prep: Network Policy - Layer 3 Node Based | [Resources](cncf-certifications/cca/domains/network-policy/07-layer-3-node-based/README.md) |
+| CCA Exam Prep: Network Policy - Layer 4 Ingress/Egress Ports | [Resources](cncf-certifications/cca/domains/network-policy/08-layer-4-ingress-egress-ports/README.md) |
 
 # Kubernetes
 

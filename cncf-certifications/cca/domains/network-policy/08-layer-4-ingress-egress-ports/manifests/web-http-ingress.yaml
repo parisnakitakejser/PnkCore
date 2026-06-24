@@ -1,0 +1,16 @@
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata:
+  name: web-http-ingress
+spec:
+  endpointSelector:
+    matchLabels:
+      app: web
+  ingress:
+    - fromEndpoints:
+        - matchLabels:
+            role: client
+      toPorts:
+        - ports:
+            - port: "80"
+              protocol: TCP
