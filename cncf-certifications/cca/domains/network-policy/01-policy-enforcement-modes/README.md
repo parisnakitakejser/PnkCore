@@ -27,17 +27,6 @@ To ensure a clear understanding of each mode, every exercise uses:
 
 Work through each section individually and verify the expected traffic behavior before moving on to the next enforcement mode.
 
-## Before You Start
-
-You need:
-
-- `kind`
-- `kubectl`
-- `helm`
-- `podman`
-
-The Kind cluster is created without the default CNI. Cilium is installed as the CNI.
-
 ## Quick Comparison
 
 | Mode | Starting behavior | What policy objects do |
