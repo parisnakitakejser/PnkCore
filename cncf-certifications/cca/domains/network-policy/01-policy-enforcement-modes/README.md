@@ -68,6 +68,31 @@ Remember for the exam:
 
 > In `default` mode, policy enforcement is enabled only for endpoints selected by policy.
 
+```mermaid
+flowchart LR
+    Internet[Outside Cluster<br/>Client / External Service]
+    Node[ Kubernetes Node<br/>Cilium Agent + eBPF ]
+    Pod[Single Pod<br/>app=backend]
+
+    Internet -->|Traffic to Pod| Node
+    Node -->|No policy selects Pod| Pod
+
+    note1["Cilium Enforcement Mode: default<br/><br/>Pod starts as allow-all<br/>until a CiliumNetworkPolicy<br/>or NetworkPolicy selects it"]
+
+    note2["When a policy selects the Pod<br/>ingress and/or egress policy becomes enforced<br/>for that selected direction"]
+
+    Policy[CiliumNetworkPolicy<br/>endpointSelector:<br/>app=backend]
+
+    Policy -. selects .-> Pod
+    Policy -. enables enforcement .-> Node
+
+    Internet -. blocked unless allowed .-> Node
+    Node -. allowed only by policy .-> Pod
+
+    note1 -.-> Pod
+    note2 -.-> Policy
+```
+
 ### Step 1: Create The Cluster
 
 ```bash
@@ -200,6 +225,34 @@ This means a normal request can fail for several reasons:
 Remember for the exam:
 
 > In `always` mode, every endpoint starts in default-deny, even before you create a policy.
+
+```mermaid
+flowchart LR
+    Internet[Outside Cluster<br/>Client / External Service]
+    Node[Kubernetes Node<br/>Cilium Agent + eBPF]
+    Pod[Single Pod<br/>app=backend]
+
+    Internet -->|Traffic arrives| Node
+
+    Node -. Default Deny .-> Pod
+
+    note1["policyEnforcementMode=always<br/><br/>All endpoints are policy enforced<br/>immediately after creation"]
+
+    note2["No matching allow policy<br/>= traffic denied"]
+
+    note3["Traffic is allowed only when<br/>a Cilium policy explicitly permits it"]
+
+    Policy[CiliumNetworkPolicy<br/>endpointSelector:<br/>app=backend]
+
+    Policy -. selects .-> Pod
+    Policy -. allow rule .-> Node
+
+    Node -->|Allowed by Policy| Pod
+
+    note1 -.-> Node
+    note2 -.-> Pod
+    note3 -.-> Policy
+```
 
 ### Step 1: Create The Cluster
 
@@ -352,6 +405,30 @@ Policy objects can still be created, but they do not block traffic.
 Remember for the exam:
 
 > In `never` mode, Cilium does not enforce policy, even if policy objects exist.
+
+```mermaid
+flowchart LR
+    Internet[Outside Cluster<br/>Client / External Service]
+    Node[Kubernetes Node<br/>Cilium Agent + eBPF]
+    Pod[Single Pod<br/>app=backend]
+
+    Internet -->|Traffic| Node
+    Node -->|Forward Packet| Pod
+
+    Policy[CiliumNetworkPolicy<br/>app=backend]
+
+    Policy -. Ignored .-> Node
+
+    note1["policyEnforcementMode=never<br/><br/>Network Policy Enforcement Disabled"]
+
+    note2["CiliumNetworkPolicy and Kubernetes NetworkPolicy<br/>have no effect"]
+
+    note3["Traffic decisions are NOT evaluated<br/>against policy rules"]
+
+    note1 -.-> Node
+    note2 -.-> Policy
+    note3 -.-> Pod
+```
 
 ### Step 1: Create The Cluster
 
