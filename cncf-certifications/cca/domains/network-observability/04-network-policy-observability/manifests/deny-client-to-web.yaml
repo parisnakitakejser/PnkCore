@@ -1,0 +1,13 @@
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata:
+  name: deny-client-to-web
+  namespace: hubble-demo
+spec:
+  endpointSelector:
+    matchLabels:
+      app: web
+  ingressDeny:
+    - fromEndpoints:
+        - matchLabels:
+            app: client
