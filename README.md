@@ -69,6 +69,7 @@ Whether you’re building your first containerized app or designing advanced on-
 | CCA Exam Prep: Network Observability - Service and Load-Balancing Flows | [Resources](cncf-certifications/cca/domains/network-observability/05-service-and-load-balancing-flows/README.md) |
 | CCA Exam Prep: Network Observability - HTTP L7 Visibility | [Resources](cncf-certifications/cca/domains/network-observability/06-http-l7-visibility/README.md) |
 | CCA Exam Prep: Network Observability - Live Debugging With Follow | [Resources](cncf-certifications/cca/domains/network-observability/07-live-debugging-with-follow/README.md) |
+| CCA Exam Prep: Network Observability - Filtering and Output Formats | [Resources](cncf-certifications/cca/domains/network-observability/08-filtering-and-output-formats/README.md) |
 | CCA Exam Prep: Network Policy - Rule Basics | [Resources](cncf-certifications/cca/domains/network-policy/00-rule-basics/README.md) |
 | CCA Exam Prep: Network Policy - Policy Enforcement Modes | [Resources](cncf-certifications/cca/domains/network-policy/01-policy-enforcement-modes/README.md) |
 | CCA Exam Prep: Network Policy - Layer 3 Endpoints Based | [Resources](cncf-certifications/cca/domains/network-policy/02-layer-3-endpoints-based/README.md) |
