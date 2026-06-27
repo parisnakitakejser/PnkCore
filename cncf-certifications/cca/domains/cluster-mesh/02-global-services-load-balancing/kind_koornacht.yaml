@@ -1,0 +1,20 @@
+apiVersion: kind.x-k8s.io/v1alpha4
+kind: Cluster
+networking:
+  disableDefaultCNI: true
+  podSubnet: 10.1.0.0/16
+  serviceSubnet: 172.20.1.0/24
+nodes:
+  - role: control-plane
+    extraPortMappings:
+      # localhost.run proxy
+      - containerPort: 32042
+        hostPort: 32042
+      # Hubble relay
+      - containerPort: 31234
+        hostPort: 31234
+      # Hubble UI
+      - containerPort: 31235
+        hostPort: 31235
+  - role: worker
+  - role: worker

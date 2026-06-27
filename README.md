@@ -82,6 +82,7 @@ Whether you’re building your first containerized app or designing advanced on-
 | CCA Exam Prep: Installation and Configuration - IPv6 Or Dual-Stack Cluster | [Resources](cncf-certifications/cca/domains/installation-and-configuration/ipv6-or-dualstack-cluster/README.md) |
 | CCA Exam Prep: Cluster Mesh - Cluster Mesh Setup & Workloads | [Resources](cncf-certifications/cca/domains/cluster-mesh/00-kind-clustermesh-setup/README.md) |
 | CCA Exam Prep: Cluster Mesh - Cross Cluster Service Discovery | [Resources](cncf-certifications/cca/domains/cluster-mesh/01-cross-cluster-service-discovery/README.md) |
+| CCA Exam Prep: Cluster Mesh - Cilium Global Services | [Resources](cncf-certifications/cca/domains/cluster-mesh/02-global-services-load-balancing/README.md) |
 
 # Kubernetes
 
