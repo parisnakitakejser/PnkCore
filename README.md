@@ -56,11 +56,15 @@ Whether you’re building your first containerized app or designing advanced on-
 ### Cilium Certified Associate (CCA)
 | Name |  Link |
 |---------------|------|
-| CCA Exam Prep: Installation and Configuration - Cilium Test Environment Setup | [Resources](cncf-certifications/cca/domains/installation-and-configuration/test-environment-setup/README.md) |
-| CCA Exam Prep: Installation and Configuration - Monitoring the Application with Hubble | [Resources](cncf-certifications/cca/domains/installation-and-configuration/monitoring-the-application-with-hubble/README.md) |
-| CCA Exam Prep: Installation and Configuration - Cilium In IPAM Mode | [Resources](cncf-certifications/cca/domains/installation-and-configuration/cilium-in-ipam-mode/README.md) |
-| CCA Exam Prep: Installation and Configuration - Cilium In Multi-Pool IPAM Mode | [Resources](cncf-certifications/cca/domains/installation-and-configuration/cilium-in-multi-pool-ipam-mode/README.md) |
-| CCA Exam Prep: Installation and Configuration - IPv6 Or Dual-Stack Cluster | [Resources](cncf-certifications/cca/domains/installation-and-configuration/ipv6-or-dualstack-cluster/README.md) |
+| CCA Exam Prep: Network Policy - Rule Basics | [Resources](cncf-certifications/cca/domains/network-policy/00-rule-basics/README.md) |
+| CCA Exam Prep: Network Policy - Policy Enforcement Modes | [Resources](cncf-certifications/cca/domains/network-policy/01-policy-enforcement-modes/README.md) |
+| CCA Exam Prep: Network Policy - Layer 3 Endpoints Based | [Resources](cncf-certifications/cca/domains/network-policy/02-layer-3-endpoints-based/README.md) |
+| CCA Exam Prep: Network Policy - Layer 3 Services Based | [Resources](cncf-certifications/cca/domains/network-policy/03-layer-3-services-based/README.md) |
+| CCA Exam Prep: Network Policy - Layer 3 Entities Based | [Resources](cncf-certifications/cca/domains/network-policy/04-layer-3-entities-based/README.md) |
+| CCA Exam Prep: Network Policy - Layer 3 IP CIDR Based | [Resources](cncf-certifications/cca/domains/network-policy/05-layer-3-ip-cidr-based/README.md) |
+| CCA Exam Prep: Network Policy - Layer 3 DNS Based | [Resources](cncf-certifications/cca/domains/network-policy/06-layer-3-dns-based/README.md) |
+| CCA Exam Prep: Network Policy - Layer 3 Node Based | [Resources](cncf-certifications/cca/domains/network-policy/07-layer-3-node-based/README.md) |
+| CCA Exam Prep: Network Policy - Layer 4 Ingress/Egress Ports | [Resources](cncf-certifications/cca/domains/network-policy/08-layer-4-ingress-egress-ports/README.md) |
 | CCA Exam Prep: Network Observability - Setup Hubble with kind | [Resources](cncf-certifications/cca/domains/network-observability/00-setup-hubble-with-kind/README.md) |
 | CCA Exam Prep: Network Observability - Observing Pod-to-Pod Traffic | [Resources](cncf-certifications/cca/domains/network-observability/01-observing-pod-to-pod-traffic/README.md) |
 | CCA Exam Prep: Network Observability - DNS Visibility | [Resources](cncf-certifications/cca/domains/network-observability/02-dns-visibility/README.md) |
@@ -71,15 +75,13 @@ Whether you’re building your first containerized app or designing advanced on-
 | CCA Exam Prep: Network Observability - Live Debugging With Follow | [Resources](cncf-certifications/cca/domains/network-observability/07-live-debugging-with-follow/README.md) |
 | CCA Exam Prep: Network Observability - Filtering and Output Formats | [Resources](cncf-certifications/cca/domains/network-observability/08-filtering-and-output-formats/README.md) |
 | CCA Exam Prep: Network Observability - Troubleshooting Hubble Itself | [Resources](cncf-certifications/cca/domains/network-observability/09-troubleshooting-hubble-itself/README.md) |
-| CCA Exam Prep: Network Policy - Rule Basics | [Resources](cncf-certifications/cca/domains/network-policy/00-rule-basics/README.md) |
-| CCA Exam Prep: Network Policy - Policy Enforcement Modes | [Resources](cncf-certifications/cca/domains/network-policy/01-policy-enforcement-modes/README.md) |
-| CCA Exam Prep: Network Policy - Layer 3 Endpoints Based | [Resources](cncf-certifications/cca/domains/network-policy/02-layer-3-endpoints-based/README.md) |
-| CCA Exam Prep: Network Policy - Layer 3 Services Based | [Resources](cncf-certifications/cca/domains/network-policy/03-layer-3-services-based/README.md) |
-| CCA Exam Prep: Network Policy - Layer 3 Entities Based | [Resources](cncf-certifications/cca/domains/network-policy/04-layer-3-entities-based/README.md) |
-| CCA Exam Prep: Network Policy - Layer 3 IP CIDR Based | [Resources](cncf-certifications/cca/domains/network-policy/05-layer-3-ip-cidr-based/README.md) |
-| CCA Exam Prep: Network Policy - Layer 3 DNS Based | [Resources](cncf-certifications/cca/domains/network-policy/06-layer-3-dns-based/README.md) |
-| CCA Exam Prep: Network Policy - Layer 3 Node Based | [Resources](cncf-certifications/cca/domains/network-policy/07-layer-3-node-based/README.md) |
-| CCA Exam Prep: Network Policy - Layer 4 Ingress/Egress Ports | [Resources](cncf-certifications/cca/domains/network-policy/08-layer-4-ingress-egress-ports/README.md) |
+| CCA Exam Prep: Installation and Configuration - Cilium Test Environment Setup | [Resources](cncf-certifications/cca/domains/installation-and-configuration/test-environment-setup/README.md) |
+| CCA Exam Prep: Installation and Configuration - Monitoring the Application with Hubble | [Resources](cncf-certifications/cca/domains/installation-and-configuration/monitoring-the-application-with-hubble/README.md) |
+| CCA Exam Prep: Installation and Configuration - Cilium In IPAM Mode | [Resources](cncf-certifications/cca/domains/installation-and-configuration/cilium-in-ipam-mode/README.md) |
+| CCA Exam Prep: Installation and Configuration - Cilium In Multi-Pool IPAM Mode | [Resources](cncf-certifications/cca/domains/installation-and-configuration/cilium-in-multi-pool-ipam-mode/README.md) |
+| CCA Exam Prep: Installation and Configuration - IPv6 Or Dual-Stack Cluster | [Resources](cncf-certifications/cca/domains/installation-and-configuration/ipv6-or-dualstack-cluster/README.md) |
+| CCA Exam Prep: Cluster Mesh - Cluster Mesh Setup & Workloads | [Resources](cncf-certifications/cca/domains/cluster-mesh/00-kind-clustermesh-setup/README.md) |
+| CCA Exam Prep: Cluster Mesh - Cross Cluster Service Discovery | [Resources](cncf-certifications/cca/domains/cluster-mesh/01-cross-cluster-service-discovery/README.md) |
 
 # Kubernetes
 

@@ -1,0 +1,77 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rebel-base-response
+  namespace: default
+data:
+  message: |
+    {"Cluster": "Koornacht", "Planet": "N'Zoth"}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rebel-base
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: rebel-base
+  template:
+    metadata:
+      labels:
+        name: rebel-base
+    spec:
+      containers:
+      - name: rebel-base
+        image: docker.io/nginx:1.15.8
+        volumeMounts:
+        - name: html
+          mountPath: /usr/share/nginx/html/
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+          periodSeconds: 1
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+      volumes:
+      - name: html
+        configMap:
+          name: rebel-base-response
+          items:
+          - key: message
+            path: index.html
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: x-wing
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: x-wing
+  template:
+    metadata:
+      labels:
+        name: x-wing
+    spec:
+      containers:
+      - name: x-wing-container
+        image: docker.io/cilium/json-mock:1.0
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rebel-base
+  namespace: default
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+  selector:
+    name: rebel-base
