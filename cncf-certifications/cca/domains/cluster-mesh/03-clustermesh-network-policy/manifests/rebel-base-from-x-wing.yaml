@@ -1,0 +1,15 @@
+---
+apiVersion: "cilium.io/v2"
+kind: CiliumNetworkPolicy
+metadata:
+  name: "rebel-base-from-x-wing"
+spec:
+  description: "Allow rebel-base to receive ingress from x-wing in Koornacht"
+  endpointSelector:
+    matchLabels:
+      name: rebel-base
+  ingress:
+  - fromEndpoints:
+    - matchLabels:
+        name: x-wing
+        io.cilium.k8s.policy.cluster: koornacht

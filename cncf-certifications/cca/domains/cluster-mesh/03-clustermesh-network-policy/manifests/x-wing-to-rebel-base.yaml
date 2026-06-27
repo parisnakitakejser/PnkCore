@@ -1,0 +1,18 @@
+---
+apiVersion: "cilium.io/v2"
+kind: CiliumNetworkPolicy
+metadata:
+  name: "x-wing-to-rebel-base"
+spec:
+  description: "Allow x-wing in Koornacht to contact rebel-base"
+  endpointSelector:
+    matchLabels:
+      name: x-wing
+      io.cilium.k8s.policy.cluster: koornacht
+  egress:
+  - toEndpoints:
+    - matchLabels:
+        name: rebel-base
+      matchExpressions:
+      - key: io.cilium.k8s.policy.cluster
+        operator: Exists
