@@ -84,6 +84,7 @@ Whether you’re building your first containerized app or designing advanced on-
 | CCA Exam Prep: Cluster Mesh - Cross Cluster Service Discovery | [Resources](cncf-certifications/cca/domains/cluster-mesh/01-cross-cluster-service-discovery/README.md) |
 | CCA Exam Prep: Cluster Mesh - Cilium Global Services | [Resources](cncf-certifications/cca/domains/cluster-mesh/02-global-services-load-balancing/README.md) |
 | CCA Exam Prep: Cluster Mesh - Multi-Cluster Network Policies | [Resources](cncf-certifications/cca/domains/cluster-mesh/03-clustermesh-network-policy/README.md) |
+| CCA Exam Prep: BGP and External Networking - External Networking And BGP Foundations | [Resources](cncf-certifications/cca/domains/bgp-and-external-networking/00-external-networking-and-bgp-foundations/README.md) |
 
 # Kubernetes
 
