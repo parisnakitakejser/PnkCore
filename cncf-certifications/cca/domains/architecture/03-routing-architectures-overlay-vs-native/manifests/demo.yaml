@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-spread-echo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node-spread-echo
+  template:
+    metadata:
+      labels:
+        app: node-spread-echo
+    spec:
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: kubernetes.io/hostname
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector:
+            matchLabels:
+              app: node-spread-echo
+      containers:
+        - name: echo
+          image: quay.io/cilium/json-mock:1.3
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-spread-echo
+spec:
+  selector:
+    app: node-spread-echo
+  ports:
+    - port: 80
+      targetPort: 8080
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: route-client
+spec:
+  containers:
+    - name: curl
+      image: curlimages/curl:8.15.0
+      command: ["sh", "-c", "sleep 3600"]
+

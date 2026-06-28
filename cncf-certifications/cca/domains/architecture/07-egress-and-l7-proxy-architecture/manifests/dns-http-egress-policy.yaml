@@ -1,0 +1,33 @@
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata:
+  name: egress-client-allow-cilium-docs
+spec:
+  endpointSelector:
+    matchLabels:
+      app: egress-client
+  egress:
+    - toEndpoints:
+        - matchLabels:
+            k8s:io.kubernetes.pod.namespace: kube-system
+            k8s:k8s-app: kube-dns
+      toPorts:
+        - ports:
+            - port: "53"
+              protocol: ANY
+          rules:
+            dns:
+              - matchPattern: "*.cilium.io"
+              - matchName: cilium.io
+    - toFQDNs:
+        - matchName: cilium.io
+        - matchPattern: "*.cilium.io"
+      toPorts:
+        - ports:
+            - port: "443"
+              protocol: TCP
+          rules:
+            http:
+              - method: GET
+                path: /.*
+

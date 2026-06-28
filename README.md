@@ -56,6 +56,15 @@ Whether you’re building your first containerized app or designing advanced on-
 ### Cilium Certified Associate (CCA)
 | Name |  Link |
 |---------------|------|
+| CCA Exam Prep: Architecture - Kind Cilium Foundation | [Resources](cncf-certifications/cca/domains/architecture/00-kind-cilium-foundation/README.md) |
+| CCA Exam Prep: Architecture - eBPF Datapath and Kube-Proxy Replacement | [Resources](cncf-certifications/cca/domains/architecture/01-ebpf-datapath-and-kube-proxy-replacement/README.md) |
+| CCA Exam Prep: Architecture - Identity and Network Policy Architecture | [Resources](cncf-certifications/cca/domains/architecture/02-identity-and-network-policy-architecture/README.md) |
+| CCA Exam Prep: Architecture - Routing Architectures: Overlay vs Native | [Resources](cncf-certifications/cca/domains/architecture/03-routing-architectures-overlay-vs-native/README.md) |
+| CCA Exam Prep: Architecture - Observability with Hubble | [Resources](cncf-certifications/cca/domains/architecture/04-observability-with-hubble/README.md) |
+| CCA Exam Prep: Architecture - Gateway API North-South Architecture | [Resources](cncf-certifications/cca/domains/architecture/05-gateway-api-north-south-architecture/README.md) |
+| CCA Exam Prep: Architecture - GAMMA Service Mesh East-West Architecture | [Resources](cncf-certifications/cca/domains/architecture/06-gamma-service-mesh-east-west-architecture/README.md) |
+| CCA Exam Prep: Architecture - Egress and L7 Proxy Architecture | [Resources](cncf-certifications/cca/domains/architecture/07-egress-and-l7-proxy-architecture/README.md) |
+| CCA Exam Prep: Architecture - Cluster Mesh Architecture on Kind | [Resources](cncf-certifications/cca/domains/architecture/08-cluster-mesh-architecture-on-kind/README.md) |
 | CCA Exam Prep: Network Policy - Rule Basics | [Resources](cncf-certifications/cca/domains/network-policy/00-rule-basics/README.md) |
 | CCA Exam Prep: Network Policy - Policy Enforcement Modes | [Resources](cncf-certifications/cca/domains/network-policy/01-policy-enforcement-modes/README.md) |
 | CCA Exam Prep: Network Policy - Layer 3 Endpoints Based | [Resources](cncf-certifications/cca/domains/network-policy/02-layer-3-endpoints-based/README.md) |
