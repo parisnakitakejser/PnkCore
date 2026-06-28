@@ -310,3 +310,15 @@ Answer these before moving to the hands-on lab:
 When Cilium advertises a LoadBalancer IP, FRR learns a route for that IP. Once
 the route exists, external clients can send traffic toward the Kubernetes
 cluster and reach the Service.
+
+## Next Lab Readiness
+
+This is a theory-only lab, so there are no local resources to clean up.
+
+Before moving to `01-kind-podman-frr-cilium-setup`, make sure you can explain
+the difference between these responsibilities:
+
+- Kubernetes creates the Service.
+- Cilium allocates and advertises the `LoadBalancer` IP.
+- FRR learns the route.
+- The external client sends traffic using that route.

@@ -1,0 +1,18 @@
+services:
+  frr:
+    image: quay.io/frrouting/frr:9.1.0
+    container_name: cilium-bgp-frr
+    privileged: true
+    restart: unless-stopped
+    networks:
+      bgp-kind:
+        ipv4_address: 172.18.0.254
+    volumes:
+      - ./frr/daemons:/etc/frr/daemons:ro
+      - ./frr/frr.conf:/etc/frr/frr.conf:ro
+      - ./frr/vtysh.conf:/etc/frr/vtysh.conf:ro
+
+networks:
+  bgp-kind:
+    external: true
+    name: bgp-kind

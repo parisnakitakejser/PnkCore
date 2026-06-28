@@ -1,0 +1,8 @@
+apiVersion: cilium.io/v2
+kind: CiliumLoadBalancerIPPool
+metadata:
+  name: bgp-lb-pool
+spec:
+  blocks:
+    - start: 172.19.100.10
+      stop: 172.19.100.250

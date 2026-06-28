@@ -85,6 +85,11 @@ Whether you’re building your first containerized app or designing advanced on-
 | CCA Exam Prep: Cluster Mesh - Cilium Global Services | [Resources](cncf-certifications/cca/domains/cluster-mesh/02-global-services-load-balancing/README.md) |
 | CCA Exam Prep: Cluster Mesh - Multi-Cluster Network Policies | [Resources](cncf-certifications/cca/domains/cluster-mesh/03-clustermesh-network-policy/README.md) |
 | CCA Exam Prep: BGP and External Networking - External Networking And BGP Foundations | [Resources](cncf-certifications/cca/domains/bgp-and-external-networking/00-external-networking-and-bgp-foundations/README.md) |
+| CCA Exam Prep: BGP and External Networking - Kind, Podman, FRR, And Cilium Setup | [Resources](cncf-certifications/cca/domains/bgp-and-external-networking/01-kind-podman-frr-cilium-setup/README.md) |
+| CCA Exam Prep: BGP and External Networking - BGP Peering With FRR | [Resources](cncf-certifications/cca/domains/bgp-and-external-networking/02-bgp-peering-with-frr/README.md) |
+| CCA Exam Prep: BGP and External Networking - LoadBalancer IP Pools And BGP Advertisements | [Resources](cncf-certifications/cca/domains/bgp-and-external-networking/03-loadbalancer-ip-pools-and-advertisements/README.md) |
+| CCA Exam Prep: BGP and External Networking - External Client Testing | [Resources](cncf-certifications/cca/domains/bgp-and-external-networking/04-external-client-testing/README.md) |
+| CCA Exam Prep: BGP and External Networking - BGP Troubleshooting | [Resources](cncf-certifications/cca/domains/bgp-and-external-networking/05-bgp-troubleshooting/README.md) |
 
 # Kubernetes
 
